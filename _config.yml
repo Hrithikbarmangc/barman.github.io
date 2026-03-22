@@ -23,7 +23,7 @@ repository               : "Hrithikbarmangc/barman.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpeg"
   name               : "Hrithik Barman"
   bio                : "M.Sc. Physics graduate from IIT Bombay"
   location           : "Mumbai, India"
