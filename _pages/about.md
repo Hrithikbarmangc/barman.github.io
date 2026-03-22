@@ -30,7 +30,7 @@ My work focuses on connecting microscopic stochastic dynamics with large-scale o
 * arXiv: *“Confinement-Induced Delay in Chiral Active Brownian Particles”*  
 * Work on chiral sorting and active particle dynamics (ongoing)  
 * Presented poster at CMMSSP National Conference
-* selected for the International Soft Matter Conference 2026 for poster presentation
+* selected for the International Soft Matter Conference(ISMC 2026 Goa) for poster presentation
 
 **Technical Skills:**
 
