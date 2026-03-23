@@ -29,11 +29,11 @@ $$y_{\mathrm{ss}}(t) = y^\star + \frac{v_0}{4\lambda_1^2 + \Omega^2} \Big[2\lamb
 
 For an aligned initial orientation $\phi_0 = 0$, the steady-state solution shows that the particle localizes in a specific well based on the sign of its chirality:
 
-$$y_{\mathrm{ss}}(t) = \sgn(\Omega)\sqrt{\frac{\lambda_1}{\lambda_2}} + \frac{v_0}{4\lambda_1^2 + \Omega^2} \Big[2\lambda_1 \sin\Omega t - \Omega \cos\Omega t \Big]$$
+$$y_{\mathrm{ss}}(t) = Sgn(\Omega)\sqrt{\frac{\lambda_1}{\lambda_2}} + \frac{v_0}{4\lambda_1^2 + \Omega^2} \Big[2\lambda_1 \sin\Omega t - \Omega \cos\Omega t \Big]$$
 
 ### Key Insights
 * **Chirality-Based Localization:** The sign of the intrinsic chirality $\Omega$ determines which of the two stable minima the particle occupies, effectively breaking parity symmetry.
 * **Suppression of Excursions:** The oscillation amplitude around $y^\star$ decreases with increasing $\lambda_1$ or $\Omega$, indicating that stronger confinement or faster chirality suppresses transverse excursions, leading to higher sorting precision.
 
 ---
-*This work was accepted for presentation at the **International Soft Matter Conference (ISMC 2026)** in Goa, India.*
+*This work was selected for presentation at the **International Soft Matter Conference (ISMC 2026)** in Goa, India.*
