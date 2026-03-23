@@ -12,8 +12,8 @@ $$U(x,y) = \frac{1}{2}k x^{2} - \frac{\lambda_{1}}{2}y^{2} + \frac{\lambda_{2}}{
 
 This configuration provides harmonic confinement in the $x$-direction and a double-well structure in the $y$-direction, with minima at $y^\star = \pm \sqrt{\lambda_{1}/\lambda_{2}}$.
 
-![Potential Landscape]({{ site.baseurl }}/images/our_chiral_sorting_potential_colorbar_top_label.png)
-*Figure 1: Potential energy landscape $U(x,y)$ showing the harmonic confinement in $x$ and the double-well structure in $y$.*
+<img src="{{ '/images/our_chiral_sorting_potential_colorbar_top_label.png' | relative_url }}" alt="Potential Landscape" style="width:100%;">
+*Figure 1: Potential energy landscape $U(x,y)$ showing the harmonic confinement in x and the double-well structure in y.*
 
 ### Governing Equations
 The overdamped dynamics of a single chiral active Brownian particle under this potential are governed by the following stochastic differential equations:
@@ -33,17 +33,17 @@ By neglecting translational and rotational noise, we determine the deterministic
 
 $$y_{\mathrm{ss}}(t) = \text{sgn}(\Omega)\sqrt{\frac{\lambda_1}{\lambda_2}} + \frac{v_0}{4\lambda_1^2 + \Omega^2} \Big[2\lambda_1 \sin\Omega t - \Omega \cos\Omega t \Big]$$
 
-![Chiral Separation Snapshots]({{ site.baseurl }}/images/chiral_separation_snapshots_6.png)
+<img src="{{ '/images/chiral_separation_snapshots_6.png' | relative_url }}" alt="Chiral Separation Snapshots" style="width:100%;">
 *Figure 2: Time evolution showing the spatial separation of chiral active particles into their respective steady-state wells.*
 
 ### Sorting Efficiency
 We quantify the efficiency of chiral sorting by measuring the fraction of particles that reach the correct potential well according to their chirality. Let $N_L$ and $N_R$ denote the numbers of left-handed ($-\Omega$) and right-handed ($+\Omega$) particles that successfully reach the corresponding wells. The sorting efficiency is defined as:
 
-$$\eta = \frac{N_L + R_R}{N}$$
+$$\eta = \frac{N_L + N_R}{N}$$
 
-Where $N$ is the total number of particles. By construction, $0 \le \eta \le 1$, with $\eta = 1$ corresponding to perfect separation. We evaluated the sorting efficiency as a function of three main parameters: the initial particle orientation $\phi_0$, the potential curvature $\lambda_1$, and the magnitude of chirality $|\Omega|$.
+Where $N$ is the total number of particles. By construction, $0 \le \eta \le 1$, with $\eta = 1$ corresponding to perfect separation. We evaluated the sorting efficiency as a function of the initial particle orientation $\phi_0$, the potential curvature $\lambda_1$, and the magnitude of chirality $|\Omega|$.
 
-![Combined Efficiency Plots]({{ site.baseurl }}/images/combined_efficiency_plots.png)
+<img src="{{ '/images/combined_efficiency_plots.png' | relative_url }}" alt="Combined Efficiency Plots" style="width:100%;">
 *Figure 3: Sorting efficiency $\eta$ as a function of (left) initial orientation $\phi_0/\pi$, (center) potential parameter ratio $\lambda_1/\lambda_2$, and (right) chirality magnitude $|\Omega|$.*
 
 ### Key Insights
