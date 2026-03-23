@@ -21,7 +21,7 @@ $$
 y^\star = \pm \sqrt{\frac{\lambda_{1}}{\lambda_{2}}}
 $$
 
-<img src="{{ '/images/our_chiral_sorting_potential_colorbar_top_label(1).png' | relative_url }}" style="width:100%;">
+<img src="{{ '/images/our_chiral_sorting_potential_colorbar_top_label (1).png' | relative_url }}" style="width:100%;">
 
 Figure 1: Potential landscape showing harmonic confinement in $x$ and a bistable double-well structure in $y$.
 
@@ -98,16 +98,16 @@ We evaluate $\eta$ as a function of:
 
 <img src="{{ '/images/combined_efficiency_plots.png' | relative_url }}" style="width:100%;">
 
-*Figure 3: Sorting efficiency $\eta$ as a function of (left) initial orientation $\phi_0/\pi$, (center) potential ratio $\lambda_1/\lambda_2$, and (right) chirality magnitude $|\Omega|$.*
+Figure 3: Sorting efficiency $\eta$ as a function of (left) initial orientation $\phi_0/\pi$, (center) potential ratio $\lambda_1/\lambda_2$, and (right) chirality magnitude $|\Omega|$.
 
 ---
 
 ### Key Insights
 
-* **Chirality-driven localization:** The sign of $\Omega$ determines which well the particle occupies.
-* **Enhanced sorting at high chirality:** Increasing $|\Omega|$ suppresses oscillatory excursions and improves accuracy.
-* **Role of initial orientation:** Sorting efficiency depends strongly on $\phi_0$, with optimal alignment near $\phi_0 \approx 0$.
-* **Control via potential landscape:** The ratio $\lambda_1/\lambda_2$ tunes the stability and separation efficiency.
+ **Chirality-driven localization:** The sign of $\Omega$ determines which well the particle occupies.
+ **Enhanced sorting at high chirality:** Increasing $|\Omega|$ suppresses oscillatory excursions and improves accuracy.
+ **Role of initial orientation:** Sorting efficiency depends strongly on $\phi_0$, with optimal alignment near $\phi_0 \approx 0$.
+ **Control via potential landscape:** The ratio $\lambda_1/\lambda_2$ tunes the stability and separation efficiency.
 
 ---
 
