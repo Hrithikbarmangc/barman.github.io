@@ -23,7 +23,7 @@ $$
 
 <img src="{{ '/images/our_chiral_sorting_potential_colorbar_top_label (1).png' | relative_url }}" style="width:100%;">
 
-Figure 1: Potential landscape showing harmonic confinement in $x$ and a bistable double-well structure in $y$.
+Figure 1: Potential landscape showing harmonic confinement in $$x$$ and a bistable double-well structure in $$y$$.
 
 ---
 
@@ -40,18 +40,18 @@ $$
 $$
 
 Here:
-- $v_0$ is the self-propulsion speed  
-- $\Omega$ is the intrinsic chirality (angular velocity)  
-- $D_t$ and $D_r$ are translational and rotational noise strengths  
-- $\xi_x, \xi_y, \eta$ are Gaussian white noises  
+- $$v_0$$ is the self-propulsion speed  
+- $$\Omega$$ is the intrinsic chirality (angular velocity)  
+- $$D_t$$ and $$D_r$ $are translational and rotational noise strengths  
+- $$\xi_x, \xi_y, \eta$$ are Gaussian white noises  
 
 ---
 
 ### Deterministic Steady-State Behavior
 
-In the absence of noise ($D_t = D_r = 0$), the dynamics become deterministic. After transient relaxation and symmetry breaking, the particle localizes in one of the two stable wells depending on the sign of its chirality.
+In the absence of noise ($$D_t = D_r = 0$$), the dynamics become deterministic. After transient relaxation and symmetry breaking, the particle localizes in one of the two stable wells depending on the sign of its chirality.
 
-For an initial orientation $\phi_0 = 0$, the long-time solution for the $y$-coordinate can be approximated as:
+For an initial orientation $$\phi_0 = 0$$, the long-time solution for the $$y$$-coordinate can be approximated as:
 
 $$
 y_{\mathrm{ss}}(t) =
@@ -82,32 +82,32 @@ $$
 $$
 
 where:
-- $N_{\mathrm{correct}}$ is the number of correctly sorted particles  
+- $$N_{\mathrm{correct}}$$ is the number of correctly sorted particles  
 - $N$ is the total number of particles  
 
 A particle is considered **correctly sorted** if:
-- $\Omega > 0$ and $y > 0$  
-- $\Omega < 0$ and $y < 0$  
+- $$\Omega > 0$$ and $$y > 0$$ 
+- $$\Omega < 0$$ and $$y < 0$$  
 
-Thus, $0 \le \eta \le 1$, with $\eta = 1$ corresponding to perfect sorting.
+Thus, $$0 \le \eta \le 1$$, with $$\eta = 1$$ corresponding to perfect sorting.
 
-We evaluate $\eta$ as a function of:
-- Initial orientation $\phi_0$  
-- Potential parameter ratio $\lambda_1/\lambda_2$  
-- Chirality magnitude $|\Omega|$  
+We evaluate $$\eta$$ as a function of:
+- Initial orientation $$\phi_0$$  
+- Potential parameter ratio $$\lambda_1/\lambda_2$$  
+- Chirality magnitude $$|\Omega|$$ 
 
 <img src="{{ '/images/combined_efficiency_plots.png' | relative_url }}" style="width:100%;">
 
-Figure 3: Sorting efficiency $\eta$ as a function of (left) initial orientation $\phi_0/\pi$, (center) potential ratio $\lambda_1/\lambda_2$, and (right) chirality magnitude $|\Omega|$.
+Figure 3: Sorting efficiency $$\eta$$ as a function of (left) initial orientation $$\phi_0/\pi$$, (center) potential ratio $$\lambda_1/\lambda_2$$, and (right) chirality magnitude $$|\Omega|$$.
 
 ---
 
 ### Key Insights
 
- **Chirality-driven localization:** The sign of $\Omega$ determines which well the particle occupies.
- **Enhanced sorting at high chirality:** Increasing $|\Omega|$ suppresses oscillatory excursions and improves accuracy.
- **Role of initial orientation:** Sorting efficiency depends strongly on $\phi_0$, with optimal alignment near $\phi_0 \approx 0$.
- **Control via potential landscape:** The ratio $\lambda_1/\lambda_2$ tunes the stability and separation efficiency.
+ **Chirality-driven localization:** The sign of $$\Omega$$ determines which well the particle occupies.
+ **Enhanced sorting at high chirality:** Increasing $$|\Omega|$$ suppresses oscillatory excursions and improves accuracy.
+ **Role of initial orientation:** Sorting efficiency depends strongly on $$\phi_0$$, with optimal alignment near $$\phi_0 \approx 0$$.
+ **Control via potential landscape:** The ratio $$\lambda_1/\lambda_2$$ tunes the stability and separation efficiency.
 
 ---
 
