@@ -15,7 +15,7 @@ $$
 U(x,y) = \frac{1}{2}k x^{2} - \frac{\lambda_{1}}{2}y^{2} + \frac{\lambda_{2}}{4}y^{4}
 $$
 
-This potential provides harmonic confinement in the $x$-direction and a double-well structure in the $y$-direction, with minima located at:
+This potential provides harmonic confinement in the $$x$$-direction and a double-well structure in the $$y$$-direction, with minima located at:
 
 $$
 y^\star = \pm \sqrt{\frac{\lambda_{1}}{\lambda_{2}}}
