@@ -42,7 +42,7 @@ $$
 Here:
 - $$v_0$$ is the self-propulsion speed  
 - $$\Omega$$ is the intrinsic chirality (angular velocity)  
-- $$D_t$$ and $$D_r$ $are translational and rotational noise strengths  
+- $$D_t$$ and $$D_r$$ $are translational and rotational noise strengths  
 - $$\xi_x, \xi_y, \eta$$ are Gaussian white noises  
 
 ---
@@ -64,7 +64,7 @@ y_{\mathrm{ss}}(t) =
 $$
 
 This expression shows that:
-- The **sign of $\Omega$ selects the well**
+- The **sign of $$\Omega$$ selects the well**
 - The particle undergoes **oscillatory motion around the stable minimum**
 
 <img src="{{ '/images/chiral_separation_snapshots_6.png' | relative_url }}" style="width:100%;">
@@ -75,7 +75,7 @@ This expression shows that:
 
 ### Sorting Efficiency
 
-To quantify sorting performance, we define the efficiency as the fraction of particles that end up in the **correct well corresponding to their chirality**.
+To quantify sorting performance, we define the efficiency as the fraction of particles that end up in the correct well corresponding to their chirality.
 
 $$
 \eta = \frac{N_{\mathrm{correct}}}{N}
@@ -83,9 +83,9 @@ $$
 
 where:
 - $$N_{\mathrm{correct}}$$ is the number of correctly sorted particles  
-- $N$ is the total number of particles  
+- $$N$$ is the total number of particles  
 
-A particle is considered **correctly sorted** if:
+A particle is considered correctly sorted if:
 - $$\Omega > 0$$ and $$y > 0$$ 
 - $$\Omega < 0$$ and $$y < 0$$  
 
@@ -98,16 +98,16 @@ We evaluate $$\eta$$ as a function of:
 
 <img src="{{ '/images/combined_efficiency_plots.png' | relative_url }}" style="width:100%;">
 
-Figure 3: Sorting efficiency $$\eta$$ as a function of (left) initial orientation $$\phi_0/\pi$$, (center) potential ratio $$\lambda_1/\lambda_2$$, and (right) chirality magnitude $$|\Omega|$$.
+Figure 3: Sorting efficiency $$\eta$$ as a function of (left) initial orientation $$\phi_0/\pi$$, (center) potential ratio $$\lambda_1/\lambda_2$$, and (right) chirality magnitude$$|\Omega|$$.
 
 ---
 
 ### Key Insights
 
- **Chirality-driven localization:** The sign of $$\Omega$$ determines which well the particle occupies.
- **Enhanced sorting at high chirality:** Increasing $$|\Omega|$$ suppresses oscillatory excursions and improves accuracy.
- **Role of initial orientation:** Sorting efficiency depends strongly on $$\phi_0$$, with optimal alignment near $$\phi_0 \approx 0$$.
- **Control via potential landscape:** The ratio $$\lambda_1/\lambda_2$$ tunes the stability and separation efficiency.
+- Chirality-d riven localization: The sign of $$\Omega$$ determines which well the particle occupies.
+- Enhanced sorting at high chirality: Increasing $$|\Omega|$$ suppresses oscillatory excursions and improves accuracy.
+- Role of initial orientation: Sorting efficiency depends strongly on $$\phi_0$$, with optimal alignment near $$\phi_0 \approx 0$$.
+- Control via potential landscape: The ratio $$\lambda_1/\lambda_2$$ tunes the stability and separation efficiency.
 
 ---
 
