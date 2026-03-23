@@ -21,19 +21,19 @@ $$\dot{\phi}(t) = \Omega + \sqrt{2D_r}\,\eta_\phi(t)$$
 Where $v_0$ is the self-propulsion speed and $\Omega$ denotes the intrinsic chirality (angular velocity).
 
 ### Steady-State Analysis
-By neglecting translational and rotational noise, we can determine the deterministic orbits. [cite_start]At long times $(t \gg 1/k)$, the transients decay, yielding the steady-state oscillatory motion:
+By neglecting translational and rotational noise, we determine the deterministic orbits where particles accumulate. At long times ($t \gg 1/k$ and $t \gg 1/2\lambda_1$), the transients decay, yielding the steady-state oscillatory motion:
 
 $$x_{\mathrm{ss}}(t) = \frac{v_0}{k^2 + \Omega^2} \Big[k\cos(\Omega t + \phi_0) + \Omega\sin(\Omega t + \phi_0)\Big]$$
 
 $$y_{\mathrm{ss}}(t) = y^\star + \frac{v_0}{4\lambda_1^2 + \Omega^2} \Big[2\lambda_1 \sin(\Omega t + \phi_0) - \Omega \cos(\Omega t + \phi_0)\Big]$$
 
-For an aligned initial orientation $\phi_0 = 0$, the solution simplifies to show how the particle localizes based on the sign of its chirality:
+For an aligned initial orientation $\phi_0 = 0$, the steady-state solution shows that the particle localizes in a specific well based on the sign of its chirality:
 
-$$y_{\mathrm{ss}}(t) = \operatorname{sgn}(\omega)\sqrt{\frac{\lambda_1}{\lambda_2}} + \frac{v_0}{4\lambda_1^2 + \Omega^2} \Big[2\lambda_1 \sin\Omega t - \Omega \cos\Omega t \Big]$$
+$$y_{\mathrm{ss}}(t) = \operatorname{sgn}(\Omega)\sqrt{\frac{\lambda_1}{\lambda_2}} + \frac{v_0}{4\lambda_1^2 + \Omega^2} \Big[2\lambda_1 \sin\Omega t - \Omega \cos\Omega t \Big]$$
 
 ### Key Insights
-* **Chirality-Based Localization:** Particles with different signs of $\Omega$ settle into different wells of the potential, enabling spatial sorting.
-* **Suppression of Excursions:** The oscillation amplitude around $y^\star$ decreases with increasing $\lambda_1$ or $\Omega$, indicating that stronger confinement or faster chirality suppresses transverse excursions.
+* **Chirality-Based Localization:** The sign of the intrinsic chirality $\Omega$ determines which of the two stable minima the particle occupies, effectively breaking parity symmetry.
+* **Suppression of Excursions:** The oscillation amplitude around $y^\star$ decreases with increasing $\lambda_1$ or $\Omega$, indicating that stronger confinement or faster chirality suppresses transverse excursions, leading to higher sorting precision.
 
 ---
 *This work was accepted for presentation at the **International Soft Matter Conference (ISMC 2026)** in Goa, India.*
