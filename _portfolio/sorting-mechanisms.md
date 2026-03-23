@@ -94,18 +94,18 @@ Thus, $$0 \le \eta \le 1$$, with $$\eta = 1$$ corresponding to perfect sorting.
 We evaluate $$\eta$$ as a function of:
 - Initial orientation $$\phi_0$$  
 - Potential parameter ratio $$\lambda_1/\lambda_2$$  
-- Chirality magnitude $|\Omega|$
+- Chirality magnitude $\lvert \Omega \rvert$
 
 <img src="{{ '/images/combined_efficiency_plots.png' | relative_url }}" style="width:100%;">
 
-Figure 3: Sorting efficiency $$\eta$$ as a function of (left) initial orientation $$\phi_0/\pi$$, (center) potential ratio $$\lambda_1/\lambda_2$$, and (right) chirality magnitude $|\Omega|$.
+Figure 3: Sorting efficiency $$\eta$$ as a function of (left) initial orientation $$\phi_0/\pi$$, (center) potential ratio $$\lambda_1/\lambda_2$$, and (right) chirality magnitude $\lvert \Omega \rvert$.
 
 ---
 
 ### Key Insights
 
 - Chirality-d riven localization: The sign of $$\Omega$$ determines which well the particle occupies.
-- Enhanced sorting at high chirality: Increasing $|\Omega|$ suppresses oscillatory excursions and improves accuracy.
+- Enhanced sorting at high chirality: Increasing $\lvert \Omega \rvert$ suppresses oscillatory excursions and improves accuracy.
 - Role of initial orientation: Sorting efficiency depends strongly on $$\phi_0$$, with optimal alignment near $$\phi_0 \approx 0$$.
 - Control via potential landscape: The ratio $$\lambda_1/\lambda_2$$ tunes the stability and separation efficiency.
 
