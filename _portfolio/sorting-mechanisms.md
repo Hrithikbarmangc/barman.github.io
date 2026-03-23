@@ -94,7 +94,7 @@ Thus, $$0 \le \eta \le 1$$, with $$\eta = 1$$ corresponding to perfect sorting.
 We evaluate $$\eta$$ as a function of:
 - Initial orientation $$\phi_0$$  
 - Potential parameter ratio $$\lambda_1/\lambda_2$$  
--  Chirality magnitude \( |\Omega| \)
+-  Chirality magnitude $\vert \Omega \vert$
 
 <img src="{{ '/images/combined_efficiency_plots.png' | relative_url }}" style="width:100%;">
 
