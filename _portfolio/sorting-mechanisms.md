@@ -23,7 +23,7 @@ $$
 
 <img src="{{ '/images/our_chiral_sorting_potential_colorbar_top_label(1).png' | relative_url }}" style="width:100%;">
 
-*Figure 1: Potential landscape showing harmonic confinement in $x$ and a bistable double-well structure in $y$.*
+Figure 1: Potential landscape showing harmonic confinement in $x$ and a bistable double-well structure in $y$.
 
 ---
 
