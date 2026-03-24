@@ -29,7 +29,7 @@ $$
   <img src="{{ '/images/single_reference_traj_both_arrows_original_params.png' | relative_url }}" style="width:45%;">
 </div>
 
-**Figure 5:** A representative trajectory of a chiral active Brownian particle. Red arrows indicate propulsion direction $$\hat{n}(t)$$, and green arrows indicate velocity $$\dot{r}(t)$$.
+**Figure 1:** A representative trajectory of a chiral active Brownian particle. Red arrows indicate propulsion direction $$\hat{n}(t)$$, and green arrows indicate velocity $$\dot{r}(t)$$.
 ---
 
 ### Mean Position Dynamics
@@ -40,9 +40,6 @@ $$\langle \mathbf{r}(t)\rangle = \mathbf{r}(0)e^{-\mu k t} + \beta e^{-\mu k t} 
 
 where we define $$\psi(t) = \phi_0 + \Omega t$$, $$\alpha = \mu k - D_r$$, and $$\beta = v_0/(\alpha^2 + \Omega^2)$$.
 
-<img src="{{ '/images/MSD_Omega_and_Dr_with_Deff_insets.png' | relative_url }}" style="width:100%;">
-
-**Figure 2:** Mean Squared Displacement (MSD) for varying chirality $\Omega$ and rotational diffusion $D_r$. The insets show the effective diffusion coefficient $D_{eff}$.
 
 ---
 
@@ -68,7 +65,9 @@ The stationary MSD at long times ($$t \to \infty$$) is:
 $$
 \langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2 + \Omega^2)\mu k}
 $$
+<img src="{{ '/images/MSD_Omega_and_Dr_with_Deff_insets.png' | relative_url }}" style="width:100%;">
 
+**Figure 2:** Mean Squared Displacement (MSD) for varying chirality $$\Omega$$ and rotational diffusion $$D_r$$. The insets show the effective diffusion coefficient $$D_{eff}$$.
 ---
 
 ### Position Cross-Correlation
@@ -102,7 +101,7 @@ $$
 
 <img src="{{ '/images/cross_correlation_uniform_ticks (2).png' | relative_url }}" style="width:100%;">
 
-**Figure 3:** Position cross-correlation $\langle x(t)y(t) \rangle$ showing oscillatory behavior for varying chirality $\Omega$ (left) and trap strength $k$ (right).
+**Figure 3:** Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscillatory behavior for varying chirality z$$\Omega$$ (left) and trap strength $$k$$ (right).
 ---
 
 ### The Delay Function: Geometric Lag
@@ -110,7 +109,7 @@ $$
 In this work, we quantify how confinement forces a lag between the particle's orientation and its actual velocity. We do this by measuring the breaking of time-reversal symmetry.
 <img src="{{ '/images/my_plot.png' | relative_url }}" style="width:100%;">
 
-**Figure 6:** Time evolution of propulsion angle $\phi(t)$ and velocity angle $\Theta(t)$ for free ($k=0$) and confined ($k=10$) systems.
+**Figure 4:** Time evolution of propulsion angle $$\phi(t)$$ and velocity angle $$\Theta(t)$$ for free ($$k=0$$) and confined ($$k=10$$) systems.
 #### 1. General Definition
 The delay function $$C(t)$$ is defined as the difference between the forward and backward correlations of velocity $$\dot{\mathbf{r}}$$ and orientation $$\hat{\mathbf{n}}$$:
 
@@ -118,7 +117,7 @@ $$
 C(t) = \langle \dot{\mathbf{r}}(t) \cdot \hat{\mathbf{n}}(0) \rangle - \langle \dot{\mathbf{r}}(0) \cdot \hat{\mathbf{n}}(t) \rangle
 $$
 
-For a **free** overdamped particle ($$k=0$$), this function is zero because the velocity follows the orientation perfectly. However, adding a trap breaks this symmetry.
+For a free overdamped particle ($$k=0$$), this function is zero because the velocity follows the orientation perfectly. However, adding a trap breaks this symmetry.
 
 #### 2. Expression for our Model
 For a chiral active particle in a harmonic trap ($$k>0$$), we derive the following analytical expression:
@@ -128,13 +127,14 @@ C(t) = \frac{-\mu k v_0}{\alpha^2 + \Omega^2} \left[ e^{-D_r t}(\alpha \cos\Omeg
 $$
 
 where the parameters are:
+
 * $$\alpha = \mu k - D_r$$
-* $$\Omega$$ is the chirality (angular frequency)
+* $$\Omega$$ is the chirality 
 * $$k$$ is the trap strength
 <img src="{{ '/images/delay_function_toprow_k.png' | relative_url }}" style="width:100%;">
 
-**Figure 4:** Comparison between theoretical (Th) and simulation (Sim) results for the delay function $C(t)$ at different trap strengths $k$.
+**Figure 5:** Comparison between theoretical (Th) and simulation (Sim) results for the delay function $$C(t)$$ at different trap strengths $$k$$.
 ---
 
-### Key Finding: Delay Without Inertia
+** Key Finding **: Delay Without Inertia
 Our main result is that **confinement alone creates this delay**. Usually delay is associated with mass or inertia, but here the combination of the trap ($$k$$) and chirality ($$\Omega$$) creates a finite response time in a completely overdamped system.
