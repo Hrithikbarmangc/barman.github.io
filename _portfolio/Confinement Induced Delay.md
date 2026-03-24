@@ -99,11 +99,20 @@ $$
 
 ---
 
-### Key Insights
+### The Delay Function: Our Key Finding
 
-* **Inertial Mimicry:** Confinement induces a response delay in overdamped systems without physical mass.
-* **Symmetry Breaking:** Chirality generates time-asymmetric cross-correlations.
-* **Emergent Timescale:** The delay $\tau_d$ defines how the particle "remembers" its orientation in a trap.
+In a free system ($k=0$), a particle's velocity and its propulsion direction are perfectly aligned. However, we found that when a trap is added ($k>0$), the velocity and orientation fall out of sync.
+
+To measure this, we use a function $C(t)$ that tests for **Time-Reversal Asymmetry**. It compares how the velocity at time $t$ relates to the orientation at time $0$, versus the other way around.
+
+The exact formula for this symmetry-breaking function is:
+
+$$
+C(t) = \frac{-\mu k v_0}{\alpha^2+\Omega^2} \left[ e^{-D_r t}(\alpha \cos\Omega t + \Omega \sin\Omega t) - \alpha e^{-\mu k t} \right]
+$$
+
+#### Key Takeaways
+* **Geometric Delay:** Usually, "delay" in physics comes from mass or inertia. Here, the delay is created purely by the **harmonic trap** ($k$) and the **chirality** ($\Omega$).
 
 ---
 *This work demonstrates that confinement alone can generate delay in active matter systems without requiring inertia.*
