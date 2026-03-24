@@ -47,7 +47,9 @@ The ensemble-averaged position $$\langle \mathbf{r}(t)\rangle$$ is derived as:
 $$\langle \mathbf{r}(t)\rangle = \mathbf{r}(0)e^{-\mu k t} + \beta e^{-\mu k t} \left[ e^{\alpha t} \begin{pmatrix} \alpha\cos\psi(t) + \Omega\sin\psi(t) \\ \alpha\sin\psi(t) - \Omega\cos\psi(t) \end{pmatrix} - \begin{pmatrix} \alpha\cos\psi(0) + \Omega\sin\psi(0) \\ \alpha\sin\psi(0) - \Omega\cos\psi(0) \end{pmatrix} \right]$$
 
 where we define $$\psi(t) = \phi_0 + \Omega t$$, $$\alpha = \mu k - D_r$$, and $$\beta = v_0/(\alpha^2 + \Omega^2)$$.
+<img src="{{ '/images/35920222-1.png' | relative_url }}" style="width:100%;">
 
+Figure 1:  Mean position magnitude for varying trap strength $$k$$ and chirality $$\Omega$$.
 
 ---
 
