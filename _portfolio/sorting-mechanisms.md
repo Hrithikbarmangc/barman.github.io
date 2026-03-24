@@ -106,7 +106,7 @@ Figure 3: Sorting efficiency $$\eta$$ as a function of (left) initial orientatio
 
 - Chirality driven localization: The sign of the angular velocity $$\Omega$$ acts as a selection rule determining which potential well the particle occupies.
 - Enhanced sorting at high chirality: While increasing $$\vert \Omega \vert$$ initially improves accuracy by suppressing oscillatory excursions, we observed a threshold effect. Beyond a certain magnitude efficiency starts decreasing as the particle's trajectory radius becomes too small to effectively navigate the potential barrier.
-- Role of initial orientation: Sorting is optimum at initial orientations of $$\phi_0 = 0$$or$$2\pi$$. Interestingly, at $$2\pi$$, particles collect in a different well compared to $$\phi_0 = 0$$, indicating a broken symmetry in the transition paths.
+- Role of initial orientation: Sorting is optimum at initial orientations of $$\phi_0 = 0$$ or $$2\pi$$. Interestingly, at $$2\pi$$, particles collect in a different well compared to $$\phi_0 = 0$$, indicating a broken symmetry in the transition paths.
 - Control via potential landscape: The ratio $$\lambda_1/\lambda_2$$ serves as a control parameter for stability. Efficiency increases with this ratio up to a specific threshold after which the steepness of the potential inhibits optimal separation.
 
 ---
