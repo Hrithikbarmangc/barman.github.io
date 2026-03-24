@@ -13,18 +13,20 @@ Our key finding is that even in overdamped dynamics, confinement induces a **fin
 
 ---
 
+
 ### Model and Method
 
-We consider a chiral active Brownian particle confined in a harmonic potential $$U(x,y) = \frac{1}{2}k(x^2 + y^2)$$. The overdamped Langevin dynamics are:
+We consider a chiral active Brownian particle confined in a harmonic potential $U(x,y) = \frac{1}{2}k(x^2 + y^2)$. The overdamped Langevin dynamics are:
 
 $$
 \begin{aligned}
-\dot{x}(t) &= v_0 \cos\phi(t) - \mu k x(t) + \sqrt{2D_t}\,\xi_x(t) \\
-\dot{y}(t) &= v_0 \sin\phi(t) - \mu k y(t) \\
-&\quad + \sqrt{2D_t}\,\xi_y(t) \\
-\dot{\phi}(t) &= \Omega + \sqrt{2D_r}\,\eta(t)
+\dot{x}(t) &= v_0 \cos\phi(t) - \mu k x(t) + \sqrt{2D_t}\xi_x(t) \\
+\dot{y}(t) &= v_0 \sin\phi(t) - \mu k y(t) + \sqrt{2D_t}\xi_y(t) \\
+\dot{\phi}(t) &= \Omega + \sqrt{2D_r}\eta(t)
 \end{aligned}
 $$
+
+
 ---
 
 ### Mean Position Dynamics
