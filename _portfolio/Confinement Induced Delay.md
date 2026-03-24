@@ -29,7 +29,8 @@ $$
   <img src="{{ '/images/single_reference_traj_both_arrows_original_params.png' | relative_url }}" style="width:45%;">
 </div>
 
-*Figure 1: A representative trajectory of a chiral active Brownian particle. Red arrows indicate propulsion direction $$\hat{n}(t)$$, and green arrows indicate velocity $$\dot{r}(t)$$*.
+Figure 1: A representative trajectory of a chiral active Brownian particle. Red arrows indicate propulsion direction $$\hat{n}(t)$$, and green arrows indicate velocity $$\dot{r}(t)$$.
+
 ---
 
 ### Mean Position Dynamics
@@ -68,7 +69,8 @@ $$
 
 <img src="{{ '/images/msd_hollow_markers_scaling (1).png' | relative_url }}" style="width:100%;">
 
-*Figure 2:  Mean Squared Displacement (MSD) for varying chirality $$\Omega$$ and rotational diffusion $$D_r$$. The insets show the effective diffusion coefficient $$D_{eff}$$.*
+Figure 2:  Mean Squared Displacement (MSD) for varying chirality $$\Omega$$ and rotational diffusion $$D_r$$. The insets show the effective diffusion coefficient $$D_{eff}$$.
+
 ---
 
 ### Position Cross-Correlation
@@ -102,7 +104,8 @@ $$
 
 <img src="{{ '/images/cross_correlation_uniform_ticks (2).png' | relative_url }}" style="width:100%;">
 
-*Figure 3: Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscillatory behavior for varying chirality z$$\Omega$$ (left) and trap strength $$k$$ (right)*.
+Figure 3: Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscillatory behavior for varying chirality z$$\Omega$$ (left) and trap strength $$k$$ (right).
+
 ---
 
 ### The Delay Function: Geometric Lag
@@ -110,7 +113,7 @@ $$
 In this work, we quantify how confinement forces a lag between the particle's orientation and its actual velocity. We do this by measuring the breaking of time-reversal symmetry.
 <img src="{{ '/images/my_plot.png' | relative_url }}" style="width:100%;">
 
-*Figure 4: Time evolution of propulsion angle $$\phi(t)$$ and velocity angle $$\Theta(t)$$ for free ($$k=0$$) and confined ($$k=10$$) systems.*
+Figure 4: Time evolution of propulsion angle $$\phi(t)$$ and velocity angle $$\Theta(t)$$ for free ($$k=0$$) and confined ($$k=10$$) systems.
 #### 1. General Definition
 The delay function $$C(t)$$ is defined as the difference between the forward and backward correlations of velocity $$\dot{\mathbf{r}}$$ and orientation $$\hat{\mathbf{n}}$$:
 
@@ -134,7 +137,8 @@ where the parameters are:
 * $$k$$ is the trap strength
 <img src="{{ '/images/delay_function_toprow_k.png' | relative_url }}" style="width:100%;">
 
-*Figure 5: Comparison between theoretical (Th) and simulation (Sim) results for the delay function $$C(t)$$ at different trap strengths $$k$$.*
+Figure 5: Comparison between theoretical (Th) and simulation (Sim) results for the delay function $$C(t)$$ at different trap strengths $$k$$.
+
 ---
 
 ** Key Finding **: Delay Without Inertia
