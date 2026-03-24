@@ -108,7 +108,7 @@ Figure 3: Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscill
 
 ---
 
-### The Delay Function: Geometric Lag
+### The **Delay Function**: Geometric Lag
 
 In this work, we quantify how confinement forces a lag between the particle's orientation and its actual velocity. We do this by measuring the breaking of time-reversal symmetry.
 <img src="{{ '/images/my_plot.png' | relative_url }}" style="width:100%;">
