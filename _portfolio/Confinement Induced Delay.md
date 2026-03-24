@@ -19,9 +19,9 @@ We consider a chiral active Brownian particle confined in a harmonic potential $
 
 $$
 \begin{aligned}
-\dot{x}(t) = v_0 \cos\phi(t) - \mu k x(t) + \sqrt{2D_t}\xi_x(t) \\
-\dot{y}(t) = v_0 \sin\phi(t) - \mu k y(t) + \sqrt{2D_t}\xi_y(t) \\
-\dot{\phi}(t) = \Omega + \sqrt{2D_r}\eta(t)
+\dot{x}(t) &= v_0 \cos\phi(t) - \mu k x(t) + \sqrt{2D_t}\xi_x(t) \\
+\dot{y}(t) &= v_0 \sin\phi(t) - \mu k y(t) + \sqrt{2D_t}\xi_y(t) \\
+\dot{\phi}(t) &= \Omega + \sqrt{2D_r}\eta(t)
 \end{aligned}
 $$
 ---
