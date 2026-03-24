@@ -58,9 +58,12 @@ where the parameters are defined as:
 $$
 \gamma = \mu k + D_r, \quad \alpha = \mu k - D_r, \quad \Delta = (\mu k)^2 - D_r^2 + \Omega^2
 $$
-The stationary MSD at long times ($$t \to \infty$$) is:
 
-$$\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2+\Omega^2)\mu k}$$
+The stationary MSD at long times ($t \to \infty$) is:
+
+$$
+\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2 + \Omega^2)\mu k}
+$$
 
 ---
 
@@ -90,9 +93,7 @@ $$
 Plug these values into the equations above:
 
 $$
-\begin{aligned}
-\beta = \mu k - 3D_r, s_1 = 2\mu k - 4D_r, s_2 = \mu k - D_r, k_1 = 2\Omega, k_2 = \Omega
-\end{aligned}
+\beta = \mu k - 3D_r, \quad s_1 = 2\mu k - 4D_r, \quad s_2 = \mu k - D_r, \quad k_1 = 2\Omega, \quad k_2 = \Omega
 $$
 
 ---
