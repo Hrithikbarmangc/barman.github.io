@@ -34,13 +34,13 @@ $$ \langle \mathbf{r}(t)\rangle
   &\quad + \beta\, e^{-\mu k t} \Bigg[
       e^{\alpha t}\vcenter{\hbox{$\displaystyle
       \begin{pmatrix}
-      \alpha\cos\psi(t) + \Omega\sin\psi(t) \\
+      \alpha\cos\psi(t) + \Omega\sin\psi(t) \\[6pt]
       \alpha\sin\psi(t) - \Omega\cos\psi(t)
       \end{pmatrix}$}} \notag\\
   &\quad\;\;
       - \vcenter{\hbox{$\displaystyle
       \begin{pmatrix}
-      \alpha\cos\psi(0) + \Omega\sin\psi(0) \\
+      \alpha\cos\psi(0) + \Omega\sin\psi(0) \\[6pt]
       \alpha\sin\psi(0) - \Omega\cos\psi(0)
       \end{pmatrix}$}}
     \Bigg] $$
