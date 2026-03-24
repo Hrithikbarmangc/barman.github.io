@@ -1,6 +1,6 @@
 ---
 title: "Confinement-Induced Delay in Active Brownian Motion"
-excerpt: "Emergence of delay and temporal correlations in confined chiral active particle dynamics."
+excerpt: "Emergence of temporal delay and correlations in confined chiral active particle dynamics."
 collection: portfolio
 mathjax: true
 ---
@@ -9,7 +9,7 @@ mathjax: true
 
 We investigate how spatial confinement modifies the dynamics of chiral active Brownian particles, leading to the emergence of **temporal delay** and **non-trivial correlations**.
 
-Our key finding is that even in an overdamped system, confinement induces a **finite response lag** between propulsion and spatial motion. This delay arises purely from the interplay of **chirality and trapping**, without requiring inertia.
+Our key finding is that even in overdamped dynamics, confinement induces a **finite lag between propulsion and spatial response**, purely due to the interplay of **chirality and trapping**.
 
 ---
 
@@ -21,7 +21,7 @@ $$
 U(x,y) = \frac{1}{2}k(x^2 + y^2)
 $$
 
-The overdamped Langevin dynamics are:
+The overdamped dynamics are:
 
 $$
 \begin{aligned}
@@ -31,31 +31,28 @@ $$
 \end{aligned}
 $$
 
-where:
-- $$v_0$$ is propulsion speed  
-- $$\Omega$$ is chirality  
-- $$k$$ is trap strength  
-- $$D_t, D_r$$ are noise strengths  
-
 ---
 
-### Trajectories and Mean Position
+### Mean Position Dynamics
 
-Confinement modifies trajectories from free circular motion to damped oscillatory motion.
-
-The ensemble-averaged position is:
+The ensemble-averaged position evolves as:
 
 $$
 \begin{aligned}
-\langle x(t) \rangle &= e^{-kt} \left[ x_0 + \frac{v_0}{k^2 + \Omega^2} (k \cos\phi_0 + \Omega \sin\phi_0) \right] \\
-&\quad + \frac{v_0}{k^2 + \Omega^2} \left( k \cos(\Omega t + \phi_0) + \Omega \sin(\Omega t + \phi_0) \right)
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\langle y(t) \rangle &= e^{-kt} \left[ y_0 + \frac{v_0}{k^2 + \Omega^2} (k \sin\phi_0 - \Omega \cos\phi_0) \right] \\
-&\quad + \frac{v_0}{k^2 + \Omega^2} \left( k \sin(\Omega t + \phi_0) - \Omega \cos(\Omega t + \phi_0) \right)
+\langle \mathbf{r}(t)\rangle
+  &= \mathbf{r}(0)\,e^{-\mu k t} \\
+  &\quad + \beta\, e^{-\mu k t} \Bigg[
+      e^{\alpha t}
+      \begin{pmatrix}
+      \alpha\cos\psi(t) + \Omega\sin\psi(t) \\
+      \alpha\sin\psi(t) - \Omega\cos\psi(t)
+      \end{pmatrix}
+      -
+      \begin{pmatrix}
+      \alpha\cos\psi(0) + \Omega\sin\psi(0) \\
+      \alpha\sin\psi(0) - \Omega\cos\psi(0)
+      \end{pmatrix}
+    \Bigg]
 \end{aligned}
 $$
 
@@ -67,23 +64,35 @@ $$
 
 ### Mean Squared Displacement (MSD)
 
-The MSD is given by:
+The full time-dependent MSD is:
 
 $$
 \begin{aligned}
-\mathrm{MSD}(t) &= \frac{2D_t}{k}(1 - e^{-2kt}) \\
-&\quad + \frac{v_0^2}{k^2 + \Omega^2}
-\left[
-t - \frac{1 - e^{-kt}\cos(\Omega t)}{k}
-+ \frac{\Omega}{k^2 + \Omega^2} e^{-kt}\sin(\Omega t)
-\right]
+\langle r^2(t) \rangle 
+&= \frac{2D_t}{\mu k}(1-e^{-2\mu k t})
++ \frac{v_0^2\gamma}{(\gamma^2+\Omega^2)\mu k }(1-e^{-2\mu k t}) \\
+&\quad + \frac{2v_0^2 e^{-\gamma t}}{(\gamma^2+\Omega^2)(\alpha^2+\Omega^2)}
+\Big[
+\Delta\big(e^{-\alpha t }-\cos(\Omega t)\big)
+-2D_r \Omega\sin(\Omega t)
+\Big]
 \end{aligned}
 $$
 
-This shows:
-- ballistic regime at short times  
-- diffusive crossover  
-- saturation due to confinement  
+The stationary MSD is:
+
+$$
+\langle r^2(t \to \infty) \rangle =
+\frac{2D_t}{\mu k}
++ \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2+\Omega^2)\mu k}
+$$
+
+The long-time diffusion vanishes:
+
+$$
+D_L^{(\text{trap})} 
+= \lim_{t \to \infty} \frac{\langle r^2(t)\rangle}{4t} = 0
+$$
 
 <img src="{{ '/images/msd.png' | relative_url }}" style="width:100%;">
 
@@ -93,56 +102,90 @@ This shows:
 
 ### Cross-Correlation
 
-The full position cross-correlation is:
+The position cross-correlation is defined as:
+
+$$
+\langle x(t)y(t) \rangle 
+= v_0^2 e^{-2\mu k t} 
+\int_0^t \int_0^t e^{\mu k (t_1 + t_2)}
+\langle \sin \phi(t_1) \cos \phi(t_2) \rangle
+\, dt_2 \, dt_1
+$$
+
+with angular correlation:
 
 $$
 \begin{aligned}
-C_{xy}(t) &= \langle x(0)\,y(t) \rangle \\
-&= \frac{v_0^2}{k^2 + \Omega^2} e^{-kt}
-\left[
-\sin(\Omega t) - \frac{\Omega}{k}(1 - \cos(\Omega t))
-\right]
+\langle \sin\phi(t_1)\cos\phi(t_2) \rangle &=
+\frac{1}{2} e^{-D_r|t_1-t_2|} \sin\Omega(t_1-t_2) \\
+&\quad + \frac{1}{2} e^{-D_r(t_1+t_2+2\min(t_1,t_2))}
+\sin(2\phi_0 + \Omega(t_1+t_2))
 \end{aligned}
 $$
 
-This function is:
-- asymmetric in time  
-- exhibits phase lag  
-- directly encodes chirality  
+The final closed-form expression is:
+
+$$
+\langle x(t)y(t) \rangle =
+\frac{v_0^2\,e^{-2\mu k t}}{\beta^2 +\Omega^2}
+\Big(\tau_1(t) -\tau_2(t)\Big)
+$$
+
+where
+
+$$
+\tau_i(t)
+= \frac{e^{s_i t}A_i(t) - A_i(0)}{s_i^2 + k_i^2}
+$$
+
+$$
+A_i(t)= (\beta s_i - \Omega k_i)\sin(k_i t + 2\phi_0)
+- (\beta k_i + \Omega s_i)\cos(k_i t + 2\phi_0)
+$$
+
+with parameters:
+
+$$
+\beta=\mu k-3D_r, \quad
+s_1=2\mu k-4D_r, \quad
+s_2=\mu k-D_r
+$$
+
+$$
+k_1=2\Omega, \quad
+k_2=\Omega
+$$
+
+<img src="{{ '/images/correlation.png' | relative_url }}" style="width:100%;">
+
+*Figure 3: Cross-correlation showing chirality-induced temporal asymmetry.*
 
 ---
 
 ### Delay Function
 
-We define the delay time as:
+The delay function is given by:
 
 $$
-\tau_d = \arg\max_t \, C_{xy}(t)
+C(t) = \frac{-\mu k v_0}{\alpha^2+\Omega^2}
+\Big[
+e^{-D_r t}\big(\alpha \cos\Omega t + \Omega \sin\Omega t\big) 
+- \alpha e^{-\mu k t}
+\Big]
 $$
-
-For finite confinement:
-
-$$
-\tau_d \approx \frac{1}{\Omega} \tan^{-1}\left(\frac{\Omega}{k}\right)
-$$
-
-This reveals that:
-- delay emerges from confinement  
-- no inertia is required  
-- $$k$$ and $$\Omega$$ jointly control the lag  
 
 <img src="{{ '/images/delay.png' | relative_url }}" style="width:100%;">
 
-*Figure 3: Cross-correlation and extracted delay time.*
+*Figure 4: Delay function illustrating temporal lag in confined dynamics.*
 
 ---
 
 ### Key Insights
 
-- Confinement induces delay in overdamped systems  
+- Confinement induces delay in overdamped active systems  
 - Chirality generates time-asymmetric correlations  
-- MSD saturation reflects suppressed transport  
-- Delay defines a new emergent timescale  
+- MSD saturates due to trapping  
+- Delay emerges without inertia  
 
 ---
 
