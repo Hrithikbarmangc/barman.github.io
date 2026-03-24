@@ -89,9 +89,7 @@ Plug these values into the equations above:
 
 $$
 \begin{aligned}
-\beta &= \mu k - 3D_r \\
-s_1 &= 2\mu k - 4D_r, \quad s_2 = \mu k - D_r \\
-k_1 &= 2\Omega, \quad k_2 = \Omega
+\beta = \mu k - 3D_r, s_1 = 2\mu k - 4D_r, s_2 = \mu k - D_r, k_1 = 2\Omega, k_2 = \Omega
 \end{aligned}
 $$
 
