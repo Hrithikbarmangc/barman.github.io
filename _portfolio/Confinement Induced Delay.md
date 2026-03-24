@@ -25,7 +25,9 @@ $$
 \dot{\phi}(t) &= \Omega + \sqrt{2D_r}\eta(t)
 \end{aligned}
 $$
-<img src="{{ '/images/single_reference_traj_both_arrows_original_params.png' | relative_url }}" style="width:50%;">
+<div style="text-align:center;">
+  <img src="{{ '/images/single_reference_traj_both_arrows_original_params.png' | relative_url }}" style="width:60%;">
+</div>
 
 **Figure 5:** A representative trajectory of a chiral active Brownian particle. Red arrows indicate propulsion direction $\hat{n}(t)$, and green arrows indicate velocity $\dot{r}(t)$.
 ---
