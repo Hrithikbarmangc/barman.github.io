@@ -1,102 +1,149 @@
 ---
 title: "Confinement-Induced Delay in Active Brownian Motion"
-excerpt: "Investigating delay effects in confined active particle dynamics using trajectory statistics and correlation measures."
+excerpt: "Emergence of delay and temporal correlations in confined chiral active particle dynamics."
 collection: portfolio
 mathjax: true
 ---
 
-### Model Description
+### Overview
 
-We study the emergence of delay in the dynamics of active Brownian particles under spatial confinement. Confinement alters particle trajectories and induces non-trivial temporal correlations, which are crucial for understanding transport in crowded and structured environments.
+We investigate how spatial confinement modifies the dynamics of chiral active Brownian particles, leading to the emergence of **temporal delay** and **non-trivial correlations**.
 
-The system consists of an active Brownian particle confined within a potential landscape, where geometric constraints influence its motion and lead to delayed response behavior.
+Our key finding is that even in an overdamped system, confinement induces a **finite response lag** between propulsion and spatial motion. This delay arises purely from the interplay of **chirality and trapping**, without requiring inertia.
 
 ---
 
-### Governing Equations
+### Model and Method
 
-The overdamped dynamics are described by:
+We consider a chiral active Brownian particle confined in a harmonic potential:
+
+$$
+U(x,y) = \frac{1}{2}k(x^2 + y^2)
+$$
+
+The overdamped Langevin dynamics are:
 
 $$
 \begin{aligned}
-\dot{x}(t) &= v_0 \cos\phi(t) + F_x(x,y) + \sqrt{2D_t}\,\xi_x(t) \\
-\dot{y}(t) &= v_0 \sin\phi(t) + F_y(x,y) + \sqrt{2D_t}\,\xi_y(t) \\
-\dot{\phi}(t) &= \sqrt{2D_r}\,\eta(t)
+\dot{x}(t) &= v_0 \cos\phi(t) - kx(t) + \sqrt{2D_t}\,\xi_x(t) \\
+\dot{y}(t) &= v_0 \sin\phi(t) - ky(t) + \sqrt{2D_t}\,\xi_y(t) \\
+\dot{\phi}(t) &= \Omega + \sqrt{2D_r}\,\eta(t)
 \end{aligned}
 $$
 
 where:
-- $$v_0$$ is the self-propulsion speed  
-- $$D_t$$ and $$D_r$$ are translational and rotational diffusion coefficients  
-- $$F_x, F_y$$ represent confinement forces  
-- $$\xi_x, \xi_y, \eta$$ are Gaussian white noises  
+- $$v_0$$ is propulsion speed  
+- $$\Omega$$ is chirality  
+- $$k$$ is trap strength  
+- $$D_t, D_r$$ are noise strengths  
 
 ---
 
-### Trajectory and Mean Position
+### Trajectories and Mean Position
 
-The confined geometry leads to modified particle trajectories compared to free motion. Over time, the particle exhibits restricted exploration and anisotropic displacement.
+Confinement modifies trajectories from free circular motion to damped oscillatory motion.
 
-We analyze:
-- Individual trajectories  
-- Ensemble-averaged mean position $$\langle x(t) \rangle, \langle y(t) \rangle$$  
+The ensemble-averaged position is:
 
-<img src="{{ '/images/trajectory_mean_position.png' | relative_url }}" style="width:100%;">
+$$
+\begin{aligned}
+\langle x(t) \rangle &= e^{-kt} \left[ x_0 + \frac{v_0}{k^2 + \Omega^2} (k \cos\phi_0 + \Omega \sin\phi_0) \right] \\
+&\quad + \frac{v_0}{k^2 + \Omega^2} \left( k \cos(\Omega t + \phi_0) + \Omega \sin(\Omega t + \phi_0) \right)
+\end{aligned}
+$$
 
-*Figure 1: Particle trajectories and evolution of mean position under confinement.*
+$$
+\begin{aligned}
+\langle y(t) \rangle &= e^{-kt} \left[ y_0 + \frac{v_0}{k^2 + \Omega^2} (k \sin\phi_0 - \Omega \cos\phi_0) \right] \\
+&\quad + \frac{v_0}{k^2 + \Omega^2} \left( k \sin(\Omega t + \phi_0) - \Omega \cos(\Omega t + \phi_0) \right)
+\end{aligned}
+$$
+
+<img src="{{ '/images/trajectory.png' | relative_url }}" style="width:100%;">
+
+*Figure 1: Particle trajectories and mean position evolution under confinement.*
 
 ---
 
 ### Mean Squared Displacement (MSD)
 
-To quantify transport properties, we compute the mean squared displacement:
+The MSD is given by:
 
 $$
-\mathrm{MSD}(t) = \langle [\mathbf{r}(t) - \mathbf{r}(0)]^2 \rangle
+\begin{aligned}
+\mathrm{MSD}(t) &= \frac{2D_t}{k}(1 - e^{-2kt}) \\
+&\quad + \frac{v_0^2}{k^2 + \Omega^2}
+\left[
+t - \frac{1 - e^{-kt}\cos(\Omega t)}{k}
++ \frac{\Omega}{k^2 + \Omega^2} e^{-kt}\sin(\Omega t)
+\right]
+\end{aligned}
 $$
 
-Confinement leads to:
-- initial ballistic regime  
-- crossover to diffusive behavior  
-- eventual saturation due to spatial restriction  
+This shows:
+- ballistic regime at short times  
+- diffusive crossover  
+- saturation due to confinement  
 
-<img src="{{ '/images/msd_plot.png' | relative_url }}" style="width:100%;">
+<img src="{{ '/images/msd.png' | relative_url }}" style="width:100%;">
 
-*Figure 2: Mean squared displacement showing confinement-induced suppression of diffusion.*
+*Figure 2: Mean squared displacement showing confinement-induced saturation.*
 
 ---
 
-### Cross-Correlation and Delay
+### Cross-Correlation
 
-To characterize temporal correlations, we compute the cross-correlation function:
+The full position cross-correlation is:
 
 $$
-C_{xy}(t) = \langle x(0)\,y(t) \rangle
+\begin{aligned}
+C_{xy}(t) &= \langle x(0)\,y(t) \rangle \\
+&= \frac{v_0^2}{k^2 + \Omega^2} e^{-kt}
+\left[
+\sin(\Omega t) - \frac{\Omega}{k}(1 - \cos(\Omega t))
+\right]
+\end{aligned}
 $$
 
-The presence of confinement introduces:
-- phase lag between coordinates  
-- delayed response in particle motion  
+This function is:
+- asymmetric in time  
+- exhibits phase lag  
+- directly encodes chirality  
 
-We define a delay function based on the shift in correlation peaks:
+---
+
+### Delay Function
+
+We define the delay time as:
 
 $$
 \tau_d = \arg\max_t \, C_{xy}(t)
 $$
 
-<img src="{{ '/images/cross_correlation_delay.png' | relative_url }}" style="width:100%;">
+For finite confinement:
 
-*Figure 3: Cross-correlation function and extracted delay time under confinement.*
+$$
+\tau_d \approx \frac{1}{\Omega} \tan^{-1}\left(\frac{\Omega}{k}\right)
+$$
+
+This reveals that:
+- delay emerges from confinement  
+- no inertia is required  
+- $$k$$ and $$\Omega$$ jointly control the lag  
+
+<img src="{{ '/images/delay.png' | relative_url }}" style="width:100%;">
+
+*Figure 3: Cross-correlation and extracted delay time.*
 
 ---
 
 ### Key Insights
 
-- Confinement-induced delay: Spatial constraints introduce a measurable lag in the system’s dynamical response.
-- Suppressed diffusion: MSD saturates at long times due to restricted motion.
-- Correlated dynamics: Cross-correlation reveals coupling between spatial degrees of freedom.
-- Emergent timescale: The delay time $$\tau_d$$ acts as a characteristic timescale of confined dynamics.
+- Confinement induces delay in overdamped systems  
+- Chirality generates time-asymmetric correlations  
+- MSD saturation reflects suppressed transport  
+- Delay defines a new emergent timescale  
 
 ---
 
-- *This work investigates confinement-induced delay effects in active Brownian motion using trajectory statistics and correlation analysis.*
+- *This work demonstrates that confinement alone can generate delay in active matter systems without requiring inertia.*
