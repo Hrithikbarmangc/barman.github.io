@@ -25,9 +25,9 @@ $$
 \dot{\phi}(t) &= \Omega + \sqrt{2D_r}\eta(t)
 \end{aligned}
 $$
-![Trajectory with Velocity Arrows](images/single_reference_traj_both_arrows_original_params.png)
-*Figure 5: A representative trajectory of a chiral active Brownian particle. The red arrows indicate the propulsion direction $\hat{n}(t)$, while the green arrows indicate the velocity $\dot{r}(t)$. The persistent misalignment between these vectors is a direct consequence of the trap.*
+<img src="{{ '/images/single_reference_traj_both_arrows_original_params.png' | relative_url }}" style="width:100%;">
 
+**Figure 5:** A representative trajectory of a chiral active Brownian particle. Red arrows indicate propulsion direction $\hat{n}(t)$, and green arrows indicate velocity $\dot{r}(t)$.
 ---
 
 ### Mean Position Dynamics
