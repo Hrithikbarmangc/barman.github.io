@@ -5,6 +5,16 @@ collection: portfolio
 mathjax: true
 ---
 
+<div style="text-align: center; margin: 20px 0;">
+  <video width="80%" autoplay loop muted playsinline style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    <source src="{{ '/images/chiral_sorting_slowmotion (1).mp4' | relative_url }}" type="video/mp4">
+  </video>
+  <p style="padding: 0 10%; font-size: 0.95em;">
+    <strong>Simulation: Chirality-Induced Spatial Sorting.</strong> 
+    We observe the spontaneous segregation of active Brownian particles into two distinct steady-state clusters. This sorting is driven by the interplay between the particles' inherent chirality ($\Omega$) and the underlying potential landscape, leading to a complete spatial separation of clockwise and counter-clockwise species.
+  </p>
+</div>
+
 ### Model Description
 
 We investigate the sorting of chiral active Brownian particles in a structured potential landscape. Chirality-induced transport plays an important role in active matter systems, with applications in microfluidic separation and biological transport.
