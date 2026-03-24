@@ -145,6 +145,6 @@ Figure 5: Comparison between theoretical (Th) and simulation (Sim) results for t
 
 -  At long times ($$t \to \infty$$) the particle reaches a steady state where the MSD saturates to a constant value. In this high-time limit, the effective diffusion constant vanishes, indicating that the particle is trapped and its motion is localized within the potential. 
 
-- The core physical mechanism behind the observed delay is the angular misalignment between the propulsion direction $$\hat{n}(t)$$ and the actual velocity vector $$\dot{r}(t)$$. While these vectors are perfectly aligned in a free system the harmonic trap ($$k$$) creates a persistent lag. This proves that a finite response time or "pseudo-inertia" can emerge purely from confinement and chirality, even in a completely overdamped system.
+- The core physical mechanism behind the observed delay is the angular misalignment between the propulsion direction $$\hat{n}(t)$$ and the actual velocity vector $$\dot{r}(t)$$. While these vectors are perfectly aligned in a free system,the harmonic trap $$k$$ creates a persistent lag. This proves that a finite response time or "pseudo-inertia" can emerge purely from confinement and chirality, even in a completely overdamped system.
 
 ---
