@@ -53,10 +53,10 @@ $$
 \end{aligned}
 $$
 
-where the auxiliary parameters are defined as:
+where the  parameters are defined as:
 
 $$
-\gamma = \mu k + D_r, \quad \alpha = \mu k - D_r, \quad \Delta = (\mu k)^2 - D_r^2 + \Omega^2
+\gamma = \mu k + D_r,  \alpha = \mu k - D_r, \Delta = (\mu k)^2 - D_r^2 + \Omega^2
 $$
 The stationary MSD at long times ($$t \to \infty$$) is:
 
@@ -66,7 +66,7 @@ $$\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\m
 
 ### Position Cross-Correlation
 
-The position cross-correlation $\langle x(t)y(t) \rangle$ shows how the $x$ and $y$ coordinates of the particle are linked. This connection happens because the particle swims in circles (chirality $\Omega$) while being pulled by the trap ($k$).
+The position cross-correlation $$\langle x(t)y(t) \rangle$$ shows how the $$x$$ and $$y$$ coordinates of the particle are linked. This connection happens because the particle swims in circles (chirality$$\Omega$$) while being pulled by the trap ($$k$$).
 
 The formula for the cross-correlation is:
 
@@ -74,7 +74,7 @@ $$
 \langle x(t)y(t) \rangle = \frac{v_0^2 e^{-2\mu k t}}{\beta^2 + \Omega^2} \left[ \tau_1(t) - \tau_2(t) \right]
 $$
 
-To find the values for $\tau_i(t)$, use:
+To find the values for $$\tau_i(t)$$, use:
 
 $$
 \tau_i(t) = \frac{e^{s_i t}A_i(t) - A_i(0)}{s_i^2 + k_i^2}
