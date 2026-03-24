@@ -112,4 +112,4 @@ Figure 3: Sorting efficiency $$\eta$$ as a function of (left) initial orientatio
 ---
 
 - This work was selected for presentation at the **International Soft Matter Conference (ISMC 2026)**, Goa, India.
-- This work was selected for a full-duration oral (podium) presentation at **CSS-FR2026** (International Conference).
+- This work was selected for a full-duration oral (podium) presentation at **CSS-FR 2026** (International Conference).
