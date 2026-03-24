@@ -15,38 +15,21 @@ Our key finding is that even in overdamped dynamics, confinement induces a **fin
 
 ### Model and Method
 
-We consider a chiral active Brownian particle confined in a harmonic potential $U(x,y) = \frac{1}{2}k(x^2 + y^2)$. The overdamped dynamics are governed by:
+We consider a chiral active Brownian particle confined in a harmonic potential $U(x,y) = \frac{1}{2}k(x^2 + y^2)$. The overdamped Langevin dynamics are:
 
-$$\dot{x}(t) = v_0 \cos\phi(t) - kx(t) + \sqrt{2D_t}\,\xi_x(t)$$
-
-$$\dot{y}(t) = v_0 \sin\phi(t) - ky(t) + \sqrt{2D_t}\,\xi_y(t)$$
-
-$$\dot{\phi}(t) = \Omega + \sqrt{2D_r}\,\eta(t)$$
+$$\dot{x}(t) = v_0 \cos\phi(t) - \mu k x(t) + \sqrt{2D_t}\xi_x(t)$$
+$$\dot{y}(t) = v_0 \sin\phi(t) - \mu k y(t) + \sqrt{2D_t}\xi_y(t)$$
+$$\dot{\phi}(t) = \Omega + \sqrt{2D_r}\eta(t)$$
 
 ---
 
 ### Mean Position Dynamics
 
-The ensemble-averaged position evolution, derived from the formal solution of the Langevin equations, is given by:
+The ensemble-averaged position $\langle \mathbf{r}(t)\rangle$ is derived as:
 
-$$
-\begin{aligned}
-\langle \mathbf{r}(t)\rangle 
-&= \mathbf{r}(0) e^{-\mu k t} \\
-&\quad + \beta e^{-\mu k t} \Bigg[
-e^{\alpha t} 
-\begin{pmatrix} 
-\alpha\cos\psi(t) + \Omega\sin\psi(t) \\ 
-\alpha\sin\psi(t) - \Omega\cos\psi(t) 
-\end{pmatrix}
--
-\begin{pmatrix} 
-\alpha\cos\psi(0) + \Omega\sin\psi(0) \\ 
-\alpha\sin\psi(0) - \Omega\cos\psi(0) 
-\end{pmatrix}
-\Bigg]
-\end{aligned}
-$$
+$$\langle \mathbf{r}(t)\rangle = \mathbf{r}(0)e^{-\mu k t} + \beta e^{-\mu k t} \left[ e^{\alpha t} \begin{pmatrix} \alpha\cos\psi(t) + \Omega\sin\psi(t) \\ \alpha\sin\psi(t) - \Omega\cos\psi(t) \end{pmatrix} - \begin{pmatrix} \alpha\cos\psi(0) + \Omega\sin\psi(0) \\ \alpha\sin\psi(0) - \Omega\cos\psi(0) \end{pmatrix} \right]$$
+
+where we define $\psi(t) = \phi_0 + \Omega t$, $\alpha = \mu k - D_r$, and $\beta = v_0/(\alpha^2 + \Omega^2)$.
 
 <img src="{{ '/images/trajectory.png' | relative_url }}" style="width:100%;">
 *Figure 1: Particle trajectories and mean position evolution under confinement.*
@@ -55,49 +38,33 @@ $$
 
 ### Mean Squared Displacement (MSD)
 
-The full time-dependent MSD for a particle starting at the origin is:
+The full time-dependent MSD, highlighting the transition from ballistic to localized behavior, is:
 
-$$\langle \Delta r^2(t) \rangle = \frac{4D_t}{k}(1-e^{-2kt}) + \frac{2v_0^2}{(k+D_r)^2 + \Omega^2} \left[ \frac{k+D_r}{k D_r} (1-e^{-kt}) - \frac{(k+D_r)(1-e^{-(k+D_r)t}\cos\Omega t) - \Omega e^{-(k+D_r)t}\sin\Omega t}{(k+D_r)^2 + \Omega^2} \right]$$
+$$\langle r^2(t) \rangle = \frac{2D_t}{\mu k}(1-e^{-2\mu k t}) + \frac{v_0^2 (\mu k + D_r)}{((\mu k + D_r)^2 + \Omega^2) \mu k} (1-e^{-2\mu k t}) + \frac{2v_0^2 e^{-(\mu k + D_r)t} [ (\mu k - D_r)\cos\Omega t + \Omega \sin\Omega t ]}{((\mu k + D_r)^2 + \Omega^2)((\mu k - D_r)^2 + \Omega^2)}$$
 
-In the stationary limit ($t \to \infty$):
+The stationary MSD ($t \to \infty$) is:
 
-$$\langle r^2 \rangle_{ss} = \frac{2D_t}{k} + \frac{v_0^2}{k(k+D_r) [1 + (\frac{\Omega}{k+D_r})^2]}$$
-
-<img src="{{ '/images/msd.png' | relative_url }}" style="width:100%;">
-*Figure 2: Mean squared displacement showing confinement-induced saturation.*
+$$\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2+\Omega^2)\mu k}$$
 
 ---
 
-### Position Cross-Correlation
+### Cross-Correlation and Delay
 
-The hallmark of chirality is the cross-correlation $C_{xy}(t) = \langle x(t)y(0) - y(t)x(0) \rangle$. For $D_r \to 0$:
+The position cross-correlation $C_{xy}(t)$ reveals the broken symmetry. We define the delay function as:
 
-$$C_{xy}(t) = \frac{v_0^2}{k^2 + \Omega^2} \left[ e^{-kt} \sin\Omega t - \frac{\Omega}{k} e^{-kt} (1 - \cos\Omega t) \right]$$
+$$C(t) = \frac{-\mu k v_0}{\alpha^2+\Omega^2} \left[ e^{-D_r t}(\alpha \cos\Omega t + \Omega \sin\Omega t) - \alpha e^{-\mu k t} \right]$$
 
-<img src="{{ '/images/correlation.png' | relative_url }}" style="width:100%;">
-*Figure 3: Cross-correlation showing chirality-induced temporal asymmetry.*
+The extracted delay time $\tau_d$ at which this correlation is maximized is:
 
----
-
-### Delay Function
-
-We define the delay time $\tau_d$ as the time required for the spatial response to reach its maximum after a change in orientation. From the extremum of the correlation function, we find:
-
-$$\tau_d = \frac{1}{\Omega} \tan^{-1}\left(\frac{\Omega}{k}\right)$$
-
-This reveals that **delay emerges purely from confinement** $k$ and chirality $\Omega$, even in the absence of physical inertia.
-
-<img src="{{ '/images/delay.png' | relative_url }}" style="width:100%;">
-*Figure 4: Delay function illustrating temporal lag in confined dynamics.*
+$$\tau_d = \frac{1}{\Omega} \tan^{-1}\left(\frac{\Omega}{\mu k}\right)$$
 
 ---
 
 ### Key Insights
 
-* **Inertial Mimicry:** Confinement induces a response delay in overdamped systems.
+* **Inertial Mimicry:** Confinement induces a response delay in overdamped systems without physical mass.
 * **Symmetry Breaking:** Chirality generates time-asymmetric cross-correlations.
-* **Saturation:** The MSD reaches a steady-state value determined by the trap strength $k$.
-* **Emergent Timescale:** $\tau_d$ defines a new characteristic timescale for confined active matter.
+* **Emergent Timescale:** The delay $\tau_d$ defines how the particle "remembers" its orientation in a trap.
 
 ---
 *This work demonstrates that confinement alone can generate delay in active matter systems without requiring inertia.*
