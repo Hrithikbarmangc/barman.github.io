@@ -32,11 +32,6 @@ $$
 \dot{\phi}(t) &= \Omega + \sqrt{2D_r}\eta(t)
 \end{aligned}
 $$
-<div style="text-align:center;">
-  <img src="{{ '/images/single_reference_traj_both_arrows_original_params.png' | relative_url }}" style="width:45%;">
-</div>
-
-Figure 1: A representative trajectory of a chiral active Brownian particle. Red arrows indicate propulsion direction $$\hat{n}(t)$$, and green arrows indicate velocity $$\dot{r}(t)$$.
 
 ---
 
@@ -47,6 +42,7 @@ The ensemble-averaged position $$\langle \mathbf{r}(t)\rangle$$ is derived as:
 $$\langle \mathbf{r}(t)\rangle = \mathbf{r}(0)e^{-\mu k t} + \beta e^{-\mu k t} \left[ e^{\alpha t} \begin{pmatrix} \alpha\cos\psi(t) + \Omega\sin\psi(t) \\ \alpha\sin\psi(t) - \Omega\cos\psi(t) \end{pmatrix} - \begin{pmatrix} \alpha\cos\psi(0) + \Omega\sin\psi(0) \\ \alpha\sin\psi(0) - \Omega\cos\psi(0) \end{pmatrix} \right]$$
 
 where we define $$\psi(t) = \phi_0 + \Omega t$$, $$\alpha = \mu k - D_r$$, and $$\beta = v_0/(\alpha^2 + \Omega^2)$$.
+
 <img src="{{ '/images/35920222-1.png' | relative_url }}" style="width:100%;">
 
 Figure 1:  Mean position magnitude for varying trap strength $$k$$ and chirality $$\Omega$$.
@@ -75,6 +71,7 @@ The stationary MSD at long times ($$t \to \infty$$) is:
 $$
 \langle r^2(t) \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2 + \Omega^2)\mu k}
 $$
+
 
 <img src="{{ '/images/msd_hollow_markers_scaling (1).png' | relative_url }}" style="width:100%;">
 
@@ -111,6 +108,7 @@ $$
 \beta = \mu k - 3D_r, \quad s_1 = 2\mu k - 4D_r, \quad s_2 = \mu k - D_r, \quad k_1 = 2\Omega, \quad k_2 = \Omega
 $$
 
+
 <img src="{{ '/images/cross_correlation_uniform_ticks (2).png' | relative_url }}" style="width:100%;">
 
 Figure 3: Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscillatory behavior for varying chirality $$\Omega$$ (left) and trap strength $$k$$ (right).
@@ -120,6 +118,7 @@ Figure 3: Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscill
 ###  **The Delay Function**: Geometric Lag
 
 In this work, we quantify how confinement forces a lag between the particle's orientation and its actual velocity. We do this by measuring the breaking of time-reversal symmetry.
+
 <img src="{{ '/images/my_plot.png' | relative_url }}" style="width:100%;">
 
 Figure 4: Time evolution of propulsion angle $$\phi(t)$$ and velocity angle $$\Theta(t)$$ for free ($$k=0$$) and confined ($$k=10$$) systems.
