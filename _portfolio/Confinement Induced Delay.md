@@ -16,7 +16,7 @@ Our key finding is that even in overdamped dynamics, confinement induces a **fin
 
 ### Model and Method
 
-We consider a chiral active Brownian particle confined in a harmonic potential $U(x,y) = \frac{1}{2}k(x^2 + y^2)$. The overdamped Langevin dynamics are:
+We consider a chiral active Brownian particle confined in a harmonic potential $$U(x,y) = \frac{1}{2}k(x^2 + y^2)$$. The overdamped Langevin dynamics are:
 
 $$
 \begin{aligned}
@@ -58,21 +58,44 @@ where the auxiliary parameters are defined as:
 $$
 \gamma = \mu k + D_r, \quad \alpha = \mu k - D_r, \quad \Delta = (\mu k)^2 - D_r^2 + \Omega^2
 $$
-The stationary MSD ($t \to \infty$) is:
+The stationary MSD at long times ($$t \to \infty$$) is:
 
 $$\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2+\Omega^2)\mu k}$$
 
 ---
 
-### Cross-Correlation and Delay
+### Position Cross-Correlation
 
-The position cross-correlation $C_{xy}(t)$ reveals the broken symmetry. We define the delay function as:
+The position cross-correlation $\langle x(t)y(t) \rangle$ shows how the $x$ and $y$ coordinates of the particle are linked. This connection happens because the particle swims in circles (chirality $\Omega$) while being pulled by the trap ($k$).
 
-$$C(t) = \frac{-\mu k v_0}{\alpha^2+\Omega^2} \left[ e^{-D_r t}(\alpha \cos\Omega t + \Omega \sin\Omega t) - \alpha e^{-\mu k t} \right]$$
+The formula for the cross-correlation is:
 
-The extracted delay time $\tau_d$ at which this correlation is maximized is:
+$$
+\langle x(t)y(t) \rangle = \frac{v_0^2 e^{-2\mu k t}}{\beta^2 + \Omega^2} \left[ \tau_1(t) - \tau_2(t) \right]
+$$
 
-$$\tau_d = \frac{1}{\Omega} \tan^{-1}\left(\frac{\Omega}{\mu k}\right)$$
+To find the values for $\tau_i(t)$, use:
+
+$$
+\tau_i(t) = \frac{e^{s_i t}A_i(t) - A_i(0)}{s_i^2 + k_i^2}
+$$
+
+The term $A_i(t)$ is calculated as:
+
+$$
+A_i(t) = (\beta s_i - \Omega k_i)\sin(k_i t + 2\phi_0) - (\beta k_i + \Omega s_i)\cos(k_i t + 2\phi_0)
+$$
+
+#### Parameters
+Plug these values into the equations above:
+
+$$
+\begin{aligned}
+\beta &= \mu k - 3D_r \\
+s_1 &= 2\mu k - 4D_r, \quad s_2 = \mu k - D_r \\
+k_1 &= 2\Omega, \quad k_2 = \Omega
+\end{aligned}
+$$
 
 ---
 
