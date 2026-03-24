@@ -99,20 +99,32 @@ $$
 
 ---
 
-### The Delay Function: Our Key Finding
+### The Delay Function: Geometric Lag
 
-In a free system ($k=0$), a particle's velocity and its propulsion direction are perfectly aligned. However, we found that when a trap is added ($k>0$), the velocity and orientation fall out of sync.
+In this work, we quantify how confinement forces a lag between the particle's orientation and its actual velocity. We do this by measuring the breaking of time-reversal symmetry.
 
-To measure this, we use a function $C(t)$ that tests for **Time-Reversal Asymmetry**. It compares how the velocity at time $t$ relates to the orientation at time $0$, versus the other way around.
-
-The exact formula for this symmetry-breaking function is:
+#### 1. General Definition
+The delay function $C(t)$ is defined as the difference between the forward and backward correlations of velocity $\dot{\mathbf{r}}$ and orientation $\hat{\mathbf{n}}$:
 
 $$
-C(t) = \frac{-\mu k v_0}{\alpha^2+\Omega^2} \left[ e^{-D_r t}(\alpha \cos\Omega t + \Omega \sin\Omega t) - \alpha e^{-\mu k t} \right]
+C(t) = \langle \dot{\mathbf{r}}(t) \cdot \hat{\mathbf{n}}(0) \rangle - \langle \dot{\mathbf{r}}(0) \cdot \hat{\mathbf{n}}(t) \rangle
 $$
 
-#### Key Takeaways
-* **Geometric Delay:** Usually, "delay" in physics comes from mass or inertia. Here, the delay is created purely by the **harmonic trap** ($k$) and the **chirality** ($\Omega$).
+For a **free** overdamped particle ($k=0$), this function is zero because the velocity follows the orientation perfectly. However, adding a trap breaks this symmetry.
+
+#### 2. Expression for our Model
+For a chiral active particle in a harmonic trap ($k>0$), we derive the following analytical expression:
+
+$$
+C(t) = \frac{-\mu k v_0}{\alpha^2 + \Omega^2} \left[ e^{-D_r t}(\alpha \cos\Omega t + \Omega \sin\Omega t) - \alpha e^{-\mu k t} \right]
+$$
+
+where the parameters are:
+* $\alpha = \mu k - D_r$
+* $\Omega$ is the chirality (angular frequency)
+* $\mu k$ is the trap strength
 
 ---
-*This work demonstrates that confinement alone can generate delay in active matter systems without requiring inertia.*
+
+### Key Finding: Delay Without Inertia
+Our main result is that **confinement alone creates this delay**. Usually, delay is associated with mass or inertia, but here, the combination of the trap ($k$) and chirality ($\Omega$) creates a finite response time in a completely overdamped system.
