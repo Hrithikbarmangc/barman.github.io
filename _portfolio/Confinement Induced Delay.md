@@ -55,7 +55,11 @@ $$
 
 where the  parameters are defined as:
 
-$$ \gamma = \mu k + D_r,  \alpha = \mu k - D_r, \Delta = (\mu k)^2 - D_r^2 + \Omega^2 $$
+$$ 
+\begin{aligned}
+\gamma = \mu k + D_r, \alpha = \mu k - D_r, \Delta = (\mu k)^2 - D_r^2 + \Omega^2 
+\end{aligned}
+$$
 The stationary MSD at long times ($$t \to \infty$$) is:
 
 $$\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2+\Omega^2)\mu k}$$
