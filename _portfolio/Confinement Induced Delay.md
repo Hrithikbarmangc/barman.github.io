@@ -30,21 +30,22 @@ $$\dot{\phi}(t) = \Omega + \sqrt{2D_r}\,\eta(t)$$
 The ensemble-averaged position evolution, derived from the formal solution of the Langevin equations, is given by:
 
 $$
-
-\langle \mathbf{r}(t)\rangle &= \mathbf{r}(0) e^{-\mu k t} \\
-&\quad + \beta e^{-\mu k t} \left[
- e^{\alpha t} 
- \begin{pmatrix} 
-  \alpha\cos\psi(t) + \Omega\sin\psi(t) \\ 
-  \alpha\sin\psi(t) - \Omega\cos\psi(t) 
- \end{pmatrix} 
- - 
- \begin{pmatrix} 
-  \alpha\cos\psi(0) + \Omega\sin\psi(0) \\ 
-  \alpha\sin\psi(0) - \Omega\cos\psi(0) 
- \end{pmatrix} 
-\right]
-
+\begin{aligned}
+\langle \mathbf{r}(t)\rangle 
+&= \mathbf{r}(0) e^{-\mu k t} \\
+&\quad + \beta e^{-\mu k t} \Bigg[
+e^{\alpha t} 
+\begin{pmatrix} 
+\alpha\cos\psi(t) + \Omega\sin\psi(t) \\ 
+\alpha\sin\psi(t) - \Omega\cos\psi(t) 
+\end{pmatrix}
+-
+\begin{pmatrix} 
+\alpha\cos\psi(0) + \Omega\sin\psi(0) \\ 
+\alpha\sin\psi(0) - \Omega\cos\psi(0) 
+\end{pmatrix}
+\Bigg]
+\end{aligned}
 $$
 
 <img src="{{ '/images/trajectory.png' | relative_url }}" style="width:100%;">
