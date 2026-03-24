@@ -55,9 +55,7 @@ $$
 
 where the  parameters are defined as:
 
-$$
-\gamma = \mu k + D_r,  \alpha = \mu k - D_r, \Delta = (\mu k)^2 - D_r^2 + \Omega^2
-$$
+$$ \gamma = \mu k + D_r,  \alpha = \mu k - D_r, \Delta = (\mu k)^2 - D_r^2 + \Omega^2 $$
 The stationary MSD at long times ($$t \to \infty$$) is:
 
 $$\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2+\Omega^2)\mu k}$$
@@ -66,7 +64,7 @@ $$\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\m
 
 ### Position Cross-Correlation
 
-The position cross-correlation $$\langle x(t)y(t) \rangle$$ shows how the $$x$$ and $$y$$ coordinates of the particle are linked. This connection happens because the particle swims in circles (chirality$$\Omega$$) while being pulled by the trap ($$k$$).
+The position cross-correlation $$\langle x(t)y(t) \rangle$$ shows how the $$x$$ and $$y$$ coordinates of the particle are linked. This connection happens because the particle swims in circles  while being pulled by the trap ($$k$$).
 
 The formula for the cross-correlation is:
 
@@ -122,7 +120,7 @@ $$
 where the parameters are:
 * $\alpha = \mu k - D_r$
 * $\Omega$ is the chirality (angular frequency)
-* $\mu k$ is the trap strength
+* $k$ is the trap strength
 
 ---
 
