@@ -63,11 +63,12 @@ $$
 The stationary MSD at long times ($$t \to \infty$$) is:
 
 $$
-\langle r^2 \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2 + \Omega^2)\mu k}
+\langle r^2(t) \rangle_{ss} = \frac{2D_t}{\mu k} + \frac{v_0^2(\mu k + D_r)}{((\mu k + D_r)^2 + \Omega^2)\mu k}
 $$
-<img src="{{ '/images/MSD_Omega_and_Dr_with_Deff_insets.png' | relative_url }}" style="width:100%;">
 
-**Figure 2:** Mean Squared Displacement (MSD) for varying chirality $$\Omega$$ and rotational diffusion $$D_r$$. The insets show the effective diffusion coefficient $$D_{eff}$$.
+<img src="{{ '/images/msd_hollow_markers_scaling (1).png' | relative_url }}" style="width:100%;">
+
+**Figure 2:**  Mean Squared Displacement (MSD) for varying chirality $$\Omega$$ and rotational diffusion $$D_r$$. The insets show the effective diffusion coefficient $$D_{eff}$$.
 ---
 
 ### Position Cross-Correlation
