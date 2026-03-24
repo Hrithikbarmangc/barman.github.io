@@ -69,7 +69,7 @@ $$
 
 <img src="{{ '/images/msd_hollow_markers_scaling (1).png' | relative_url }}" style="width:100%;">
 
-Figure 2:  Mean Squared Displacement (MSD) for varying chirality $$\Omega$$ and rotational diffusion $$D_r$$. The insets show the effective diffusion coefficient $$D_{eff}$$.
+Figure 2:  Mean Squared Displacement (MSD) for varying trap strength $$k$$ and chirality $$\Omega$$. 
 
 ---
 
@@ -104,7 +104,7 @@ $$
 
 <img src="{{ '/images/cross_correlation_uniform_ticks (2).png' | relative_url }}" style="width:100%;">
 
-Figure 3: Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscillatory behavior for varying chirality z$$\Omega$$ (left) and trap strength $$k$$ (right).
+Figure 3: Position cross-correlation $$\langle x(t)y(t) \rangle$$ showing oscillatory behavior for varying chirality $$\Omega$$ (left) and trap strength $$k$$ (right).
 
 ---
 
