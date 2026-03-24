@@ -18,7 +18,9 @@ Our key finding is that even in overdamped dynamics, confinement induces a **fin
 We consider a chiral active Brownian particle confined in a harmonic potential $U(x,y) = \frac{1}{2}k(x^2 + y^2)$. The overdamped dynamics are governed by:
 
 $$\dot{x}(t) = v_0 \cos\phi(t) - kx(t) + \sqrt{2D_t}\,\xi_x(t)$$
+
 $$\dot{y}(t) = v_0 \sin\phi(t) - ky(t) + \sqrt{2D_t}\,\xi_y(t)$$
+
 $$\dot{\phi}(t) = \Omega + \sqrt{2D_r}\,\eta(t)$$
 
 ---
@@ -27,9 +29,21 @@ $$\dot{\phi}(t) = \Omega + \sqrt{2D_r}\,\eta(t)$$
 
 The ensemble-averaged position evolution, derived from the formal solution of the Langevin equations, is given by:
 
-$$\langle x(t) \rangle = x_0 e^{-kt} + \frac{v_0}{(k+D_r)^2 + \Omega^2} \left[ e^{-D_r t} \{ (k+D_r) \cos(\Omega t + \phi_0) + \Omega \sin(\Omega t + \phi_0) \} - e^{-kt} \{ (k+D_r) \cos\phi_0 + \Omega \sin\phi_0 \} \right]$$
-
-$$\langle y(t) \rangle = y_0 e^{-kt} + \frac{v_0}{(k+D_r)^2 + \Omega^2} \left[ e^{-D_r t} \{ (k+D_r) \sin(\Omega t + \phi_0) - \Omega \cos(\Omega t + \phi_0) \} - e^{-kt} \{ (k+D_r) \sin\phi_0 - \Omega \cos\phi_0 \} \right]$$
+$$ \langle \mathbf{r}(t)\rangle
+  &= \mathbf{r}(0)\,e^{-\mu k t} \notag\\
+  &\quad + \beta\, e^{-\mu k t} \Bigg[
+      e^{\alpha t}\vcenter{\hbox{$\displaystyle
+      \begin{pmatrix}
+      \alpha\cos\psi(t) + \Omega\sin\psi(t) \\
+      \alpha\sin\psi(t) - \Omega\cos\psi(t)
+      \end{pmatrix}$}} \notag\\
+  &\quad\;\;
+      - \vcenter{\hbox{$\displaystyle
+      \begin{pmatrix}
+      \alpha\cos\psi(0) + \Omega\sin\psi(0) \\
+      \alpha\sin\psi(0) - \Omega\cos\psi(0)
+      \end{pmatrix}$}}
+    \Bigg] $$
 
 <img src="{{ '/images/trajectory.png' | relative_url }}" style="width:100%;">
 *Figure 1: Particle trajectories and mean position evolution under confinement.*
