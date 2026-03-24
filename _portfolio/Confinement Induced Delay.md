@@ -53,12 +53,10 @@ $$
 \end{aligned}
 $$
 
-where the  parameters are defined as:
+where the parameters are defined as:
 
-$$ 
-\begin{aligned}
-\gamma = \mu k + D_r, \alpha = \mu k - D_r, \Delta = (\mu k)^2 - D_r^2 + \Omega^2 
-\end{aligned}
+$$
+\gamma = \mu k + D_r, \quad \alpha = \mu k - D_r, \quad \Delta = (\mu k)^2 - D_r^2 + \Omega^2
 $$
 The stationary MSD at long times ($$t \to \infty$$) is:
 
