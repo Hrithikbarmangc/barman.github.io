@@ -140,9 +140,9 @@ $$
 
 where the parameters are:
 
-* $\alpha = \mu k - D_r$
-* $\Omega$ is the chirality
-* $k$ is the trap strength
+* $$\alpha$$ = $$\mu k$$ - $$D_r$$
+* $$\Omega$$ is the chirality
+* $$k$$ is the trap strength
 <img src="{{ '/images/delay_function_toprow_k.png' | relative_url }}" style="width:100%;">
 
 Figure 5: Comparison between theoretical (Th) and simulation (Sim) results for the delay function $$C(t)$$ at different trap strengths $$k$$.
