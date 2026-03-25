@@ -5,9 +5,9 @@ excerpt: "MSc Thesis Project at IIT Bombay supervised by Prof. Amitabha Nandi an
 author_profile: true
 ---
 
-# **Part 1: Short-Time Anisotropy of ABP**
+###  Part 1: Short-Time Anisotropy of ABP
 
-### **Model Description**
+###  Model Description
 
 We analyze the dynamics of an overdamped active particle in two dimensions, moving with a constant propulsion speed $v_0$. The direction of motion is determined by an internal orientation angle $\phi(t)$, which undergoes rotational diffusion.
 
