@@ -12,7 +12,7 @@ mathjax: true
   <p><strong> </strong> Visualization geometric lag between propulsion (green) and velocity (red) vectors.</p>
 </div>
 
-### Overview
+### Overview 
 
 We investigate how spatial confinement modifies the dynamics of chiral active Brownian particles leading to the emergence of temporal delay and non-trivial position correlations. 
 
