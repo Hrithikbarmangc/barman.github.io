@@ -9,7 +9,7 @@ mathjax: true
   <video width="60%" autoplay loop muted playsinline style="border-radius: 8px; border: 1px solid #333;">
     <source src="{{ '/images/active_particle_animation.mp4' | relative_url }}" type="video/mp4">
   </video>
-  <p><strong>Figure 3:</strong> Visualization geometric lag between propulsion (green) and velocity (red) vectors.</p>
+  <p><strong> </strong> Visualization geometric lag between propulsion (green) and velocity (red) vectors.</p>
 </div>
 
 ### Overview
