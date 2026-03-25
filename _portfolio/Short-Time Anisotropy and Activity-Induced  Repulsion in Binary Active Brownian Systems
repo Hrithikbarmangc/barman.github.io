@@ -1,85 +1,145 @@
 ---
 layout: archive
-title: "Master's Thesis: Dynamics and Repulsion in Active Brownian Systems"
+title: "Master's Thesis: Short Time Anisotropy and Repulsion in Active Brownian Systems"
 excerpt: "MSc Thesis Project at IIT Bombay supervised by Prof. Amitabha Nandi and Prof. Dibyendu Das."
 author_profile: true
 ---
 
-# **Part 1: Short-Time Anisotropy of ABP**
+# Part 1: Short-Time Anisotropy of ABP
 
-### **Model Description**
-We analyze the dynamics of an overdamped active particle in two dimensions, moving with a constant propulsion speed $v_0$. The direction of motion is determined by an internal orientation angle $\phi(t)$, which undergoes rotational diffusion. The motion of the particle is governed by the following set of Langevin equations:
+## Model Description
 
-\begin{align}
-   \dot{x}(t) &= v_0 \cos \phi(t) \\
-   \dot{y}(t) &= v_0 \sin \phi(t) \\
-   \dot{\phi}(t) &= \sqrt{2D_R} \ \eta_\phi(t)
-\end{align}
+We analyze the dynamics of an overdamped active particle in two dimensions, moving with a constant propulsion speed $v_0$. The direction of motion is determined by an internal orientation angle $\phi(t)$, which undergoes rotational diffusion.
 
-where $\eta_\phi(t)$ is a Gaussian white noise with zero mean and two-point correlation function:
-$$\langle \eta_\phi(t) \eta_\phi(t') \rangle = \delta(t - t')$$
+The Langevin equations are:
 
-### **Mean Position**
-The mean position along the $x$ and $y$ directions are calculated as follows:
+$$
+\dot{x}(t) = v_0 \cos \phi(t)
+$$
 
-\begin{align}
-   \langle x(t)\rangle = \int_0^{t}v_0\cos \phi(0)e^{-D_RS}ds = \frac{v_0 }{D_R}\cos\phi(0)(1-e^{-D_Rt})
-\end{align}
+$$
+\dot{y}(t) = v_0 \sin \phi(t)
+$$
 
-\begin{align}
-   \langle y(t)\rangle = \int_0^{t}v_0\sin \phi(0)e^{-D_RS}ds = \frac{v_0 }{D_R}\sin\phi(0)(1-e^{-D_Rt})
-\end{align}
+$$
+\dot{\phi}(t) = \sqrt{2D_R} \, \eta_\phi(t)
+$$
 
-### **Mean Squared Displacement (MSD)**
-The analytical expressions for the mean squared displacement along each axis are:
+where $\eta_\phi(t)$ is Gaussian white noise with
 
-\begin{align}
-\langle x^2(t) \rangle = \frac{v_0^2}{D_R^2} \left( D_R t + e^{-D_R t} - 1 \right) + \frac{v_0^2}{12 D_R^2} \left( 3 - 4e^{-D_R t} + e^{-4D_R t} \right) \cos 2\phi(0)
-\end{align}
+$$
+\langle \eta_\phi(t)\eta_\phi(t') \rangle = \delta(t - t')
+$$
 
-\begin{align}
-\langle y^2(t) \rangle = \frac{v_0^2}{D_R^2} \left( D_R t + e^{-D_R t} - 1 \right) - \frac{v_0^2}{12 D_R^2} \left( 3 - 4e^{-D_R t} + e^{-4D_R t} \right) \cos 2\phi(0)
-\end{align}
+---
 
-The total MSD is given by:
-\begin{align}
-   \langle r^2(t)\rangle = \langle x^2(t)\rangle + \langle y^2(t)\rangle = \frac{2v_0^2}{D_R^2} \left( D_R t + e^{-D_R t} - 1 \right) 
-\end{align}
+## Mean Position
 
-### **Variances of Position**
-The variances along the $x$ and $y$ directions capture the spread of the distribution:
+$$
+\langle x(t) \rangle = \int_0^t v_0 \cos \phi(0) e^{-D_R s} ds 
+= \frac{v_0}{D_R} \cos \phi(0) \left(1 - e^{-D_R t}\right)
+$$
 
-\begin{align}
-\sigma^2_x(t) = \frac{v_0^2 t}{D_R} + \frac{v_0^2}{12 D_R^2} \Big[ e^{-4D_R t} \cos 2\phi(0) - 12 e^{-2D_R t} \cos^2\phi(0) + 16 e^{-D_R t}(1 + \cos^2\phi(0)) - 3(5 + 2 \cos^2\phi(0)) \Big]
-\end{align}
+$$
+\langle y(t) \rangle = \int_0^t v_0 \sin \phi(0) e^{-D_R s} ds 
+= \frac{v_0}{D_R} \sin \phi(0) \left(1 - e^{-D_R t}\right)
+$$
 
-\begin{align}
-\sigma^2_y(t) = \frac{v_0^2 t}{D_R} - \frac{v_0^2}{12 D_R^2} \Big[ e^{-4D_R t} \cos 2\phi(0) + 12 e^{-2D_R t} \sin^2\phi(0) - 16 e^{-D_R t}(1 + \sin^2\phi(0)) + 3(5 + 2 \sin^2\phi(0)) \Big]
-\end{align}
+---
 
-### **Short-Time Dynamics ($t \ll D_R^{-1}$)**
-To investigate the early-stage behavior, we analyze the Taylor expansion of the variance around $t=0$:
+## Mean Squared Displacement (MSD)
 
-\begin{align}
-   \sigma_x^2(t) = \frac{v_0^2 }{12 D_R^2} \biggl[ 8 D_R^3 t^3 (1 - \cos^2 \phi(0)) + 2 D_R^4 t^4 (7 \cos^2 \phi(0) - 5) + \frac{D_R^5 t^5}{5} (42 - 70 \cos^2 \phi(0)) \biggr]
-\end{align}
+$$
+\langle x^2(t) \rangle =
+\frac{v_0^2}{D_R^2} \left(D_R t + e^{-D_R t} - 1\right)
++ \frac{v_0^2}{12 D_R^2} \left(3 - 4e^{-D_R t} + e^{-4D_R t}\right)\cos 2\phi(0)
+$$
 
-\begin{align}
-   \sigma_y^2(t) = \frac{v_0^2 }{12 D_R^2} \biggl[ 8 D_R^3 t^3 (1 - \sin^2 \phi(0)) + 2 D_R^4 t^4 (7 \sin^2 \phi(0) - 5) + \frac{D_R^5 t^5}{5} (42 - 70 \sin^2 \phi(0)) \biggr]
-\end{align}
+$$
+\langle y^2(t) \rangle =
+\frac{v_0^2}{D_R^2} \left(D_R t + e^{-D_R t} - 1\right)
+- \frac{v_0^2}{12 D_R^2} \left(3 - 4e^{-D_R t} + e^{-4D_R t}\right)\cos 2\phi(0)
+$$
 
-#### **Case 1: $\phi(0) = 0$ (Initial motion along the x-axis)**
-\begin{align}
-\sigma_x^2(t) \approx \frac{1}{3}v_0^2 D_R^2 t^4 - \frac{7}{15}v_0^2 D_R^3 t^5 + \dots
-\end{align}
-\begin{align}
+Total MSD:
+
+$$
+\langle r^2(t) \rangle =
+\frac{2v_0^2}{D_R^2} \left(D_R t + e^{-D_R t} - 1\right)
+$$
+
+---
+
+## Variances of Position
+
+$$
+\sigma_x^2(t) =
+\frac{v_0^2 t}{D_R}
++ \frac{v_0^2}{12 D_R^2}
+\Big[
+e^{-4D_R t} \cos 2\phi(0)
+- 12 e^{-2D_R t} \cos^2\phi(0)
++ 16 e^{-D_R t}(1 + \cos^2\phi(0))
+- 3(5 + 2\cos^2\phi(0))
+\Big]
+$$
+
+$$
+\sigma_y^2(t) =
+\frac{v_0^2 t}{D_R}
+- \frac{v_0^2}{12 D_R^2}
+\Big[
+e^{-4D_R t} \cos 2\phi(0)
++ 12 e^{-2D_R t} \sin^2\phi(0)
+- 16 e^{-D_R t}(1 + \sin^2\phi(0))
++ 3(5 + 2\sin^2\phi(0))
+\Big]
+$$
+
+---
+
+## Short-Time Dynamics ($t \ll D_R^{-1}$)
+
+$$
+\sigma_x^2(t) =
+\frac{v_0^2}{12 D_R^2}
+\left[
+8 D_R^3 t^3 (1 - \cos^2 \phi(0))
++ 2 D_R^4 t^4 (7 \cos^2 \phi(0) - 5)
++ \frac{D_R^5 t^5}{5} (42 - 70 \cos^2 \phi(0))
+\right]
+$$
+
+$$
+\sigma_y^2(t) =
+\frac{v_0^2}{12 D_R^2}
+\left[
+8 D_R^3 t^3 (1 - \sin^2 \phi(0))
++ 2 D_R^4 t^4 (7 \sin^2 \phi(0) - 5)
++ \frac{D_R^5 t^5}{5} (42 - 70 \sin^2 \phi(0))
+\right]
+$$
+
+---
+
+### Case 1: $\phi(0) = 0$
+
+$$
+\sigma_x^2(t) \approx \frac{1}{3} v_0^2 D_R^2 t^4 - \frac{7}{15} v_0^2 D_R^3 t^5 + \dots
+$$
+
+$$
 \sigma_y^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 + \dots
-\end{align}
+$$
 
-#### **Case 2: $\phi(0) = \frac{\pi}{2}$ (Initial motion along the y-axis)**
-\begin{align}
+---
+
+### Case 2: $\phi(0) = \frac{\pi}{2}$
+
+$$
 \sigma_x^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 + \dots
-\end{align}
-\begin{align}
-\sigma_y^2(t) \approx \frac{1}{3}v_0^2 D_R^2 t^4 - \frac{7}{15}v_0^2 D_R^3 t^5 + \dots
-\end{align}
+$$
+
+$$
+\sigma_y^2(t) \approx \frac{1}{3} v_0^2 D_R^2 t^4 - \frac{7}{15} v_0^2 D_R^3 t^5 + \dots
+$$
