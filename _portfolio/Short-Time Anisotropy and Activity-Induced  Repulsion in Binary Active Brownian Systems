@@ -1,11 +1,15 @@
 ---
+
 layout: archive
 title: "Master's Thesis: Short Time Anisotropy and Repulsion in Active Brownian Systems"
 excerpt: "MSc Thesis Project at IIT Bombay supervised by Prof. Amitabha Nandi and Prof. Dibyendu Das."
 author_profile: true
+
+
 ---
 
-### Part 1: Short-Time Anisotropy of ABP
+
+###  Part 1: Short-Time Anisotropy of ABP
 
 ** Model Description **
 
@@ -31,9 +35,11 @@ $$
 \langle \eta_\phi(t)\eta_\phi(t') \rangle = \delta(t - t')
 $$
 
+
 ---
 
-*** Mean Position ***
+
+** Mean Position **
 
 $$
 \langle x(t) \rangle = \int_0^t v_0 \cos \phi(0) e^{-D_R s} ds 
@@ -45,7 +51,9 @@ $$
 = \frac{v_0}{D_R} \sin \phi(0) \left(1 - e^{-D_R t}\right)
 $$
 
+
 ---
+
 
 ** Mean Squared Displacement (MSD) **
 
@@ -68,7 +76,9 @@ $$
 \frac{2v_0^2}{D_R^2} \left(D_R t + e^{-D_R t} - 1\right)
 $$
 
+
 ---
+
 
 ** Variances of Position **
 
@@ -96,7 +106,9 @@ e^{-4D_R t} \cos 2\phi(0)
 \Big]
 $$
 
+
 ---
+
 
 ** Short-Time Dynamics ($t \ll D_R^{-1}$) **
 
@@ -120,9 +132,11 @@ $$
 \right]
 $$
 
+
 ---
 
-- Case 1: $$\phi(0) = 0$$
+
+-  Case 1: $$\phi(0) = 0$$
 
 $$
 \sigma_x^2(t) \approx \frac{1}{3} v_0^2 D_R^2 t^4 - \frac{7}{15} v_0^2 D_R^3 t^5 + \dots
@@ -132,9 +146,10 @@ $$
 \sigma_y^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 + \dots
 $$
 
+
 ---
 
-- Case 2: $$\phi(0) = \frac{\pi}{2}$$
+-  Case 2: $$\phi(0) = \frac{\pi}{2}$$
 
 $$
 \sigma_x^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 + \dots
