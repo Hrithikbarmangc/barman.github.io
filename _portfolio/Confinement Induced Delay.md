@@ -139,7 +139,6 @@ C(t) = \frac{-\mu k v_0}{\alpha^2 + \Omega^2} \left[ e^{-D_r t}(\alpha \cos\Omeg
 $$
 
 where the parameters are:
-
 * $$\alpha = \mu k - D_r$$
 * $$\Omega$$ is the chirality 
 * $$k$$ is the trap strength
