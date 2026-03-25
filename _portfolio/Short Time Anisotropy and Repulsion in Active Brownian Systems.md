@@ -69,7 +69,7 @@ $$\sigma_y^2(t) = \frac{v_0^2 }{12 D_R^2} \biggl[ 8 D_R^3 t^3 (1 - \sin^2 \phi(0
 
 ---
 
-#### **Case 1: $$\phi(0) = 0$$ (Initial motion along the x-axis)**
+#### **Case 1: $$\phi(0) = 0$$** (Initial motion along the x-axis)
 
 $$\sigma_x^2(t) \approx \frac{1}{3} v_0^2 D_R^2 t^4 - \frac{7}{15} v_0^2 D_R^3 t^5 + \dots$$
 
@@ -77,7 +77,7 @@ $$\sigma_y^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 
 
 ---
 
-#### **Case 2: $$\phi(0) = \frac{\pi}{2}$$ (Initial motion along the y-axis)**
+#### **Case 2: $$\phi(0) = \frac{\pi}{2}$$ **(Initial motion along the y-axis)
 
 $$\sigma_x^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 + \dots$$
 
