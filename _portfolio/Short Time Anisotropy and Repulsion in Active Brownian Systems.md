@@ -77,7 +77,7 @@ $$\sigma_y^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 
 
 ---
 
-#### **Case 2: $$\phi(0) = \frac{\pi}{2}$$ **(Initial motion along the y-axis)
+#### **Case 2: $$\phi(0) = \frac{\pi}{2}$$** (Initial motion along the y-axis)
 
 $$\sigma_x^2(t) \approx \frac{2}{3} v_0^2 D_R t^3 - \frac{5}{6} v_0^2 D_R^2 t^4 + \dots$$
 
